@@ -226,3 +226,10 @@ log.txt
 log.txt
 log_municipal.txt
 **.DS_Store
+data/ubereats.db
+assets/ER_schema_deliveroo.png
+.gitignore
+assets/ER_schema_takeaway.png
+assets/ER_schema_ubereats.png
+data/deliveroo.db
+data/takeaway.db
