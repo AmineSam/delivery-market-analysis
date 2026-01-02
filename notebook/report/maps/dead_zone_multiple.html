@@ -1,0 +1,6506 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f49de384d50beeddbb2e069c9695735b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f49de384d50beeddbb2e069c9695735b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f49de384d50beeddbb2e069c9695735b = L.map(
+                "map_f49de384d50beeddbb2e069c9695735b",
+                {
+                    center: [50.904565015, 3.491082041],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0c2d540eeed44b12f9e5639a55098fd4 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0c2d540eeed44b12f9e5639a55098fd4.addTo(map_f49de384d50beeddbb2e069c9695735b);
+        
+    
+            var feature_group_5ff3f65f57e0014284df374bbbb38793 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_ea9e8fd7d0c127289cbffc086a3d0827 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_168476956d076e94729971cd57cda3ba = L.marker(
+                [50.9145181475, 2.7427879295],
+                {
+}
+            ).addTo(marker_cluster_ea9e8fd7d0c127289cbffc086a3d0827);
+        
+    
+            var icon_0bfb4909d84fa0155266704d652d61db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac16721a0aa3b9dc0a2d0ab59c7ccb6e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cf47a68d92a6c321f0a79ba99441ec13 = $(`<div id="html_cf47a68d92a6c321f0a79ba99441ec13" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8640<br><b>Restaurants delivering:</b> 1</div>`)[0];
+                popup_ac16721a0aa3b9dc0a2d0ab59c7ccb6e.setContent(html_cf47a68d92a6c321f0a79ba99441ec13);
+            
+        
+
+        marker_168476956d076e94729971cd57cda3ba.bindPopup(popup_ac16721a0aa3b9dc0a2d0ab59c7ccb6e)
+        ;
+
+        
+    
+    
+            marker_168476956d076e94729971cd57cda3ba.bindTooltip(
+                `<div>
+                     8640 — 1 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_168476956d076e94729971cd57cda3ba.setIcon(icon_0bfb4909d84fa0155266704d652d61db);
+            
+    
+            var marker_a598ef8b2eba09523d023a053fdc828c = L.marker(
+                [50.96688798, 2.7664292246],
+                {
+}
+            ).addTo(marker_cluster_ea9e8fd7d0c127289cbffc086a3d0827);
+        
+    
+            var icon_72584b648c473c629cb08bb9cdff30c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09ef594572e5f23b879f31f9d2492701 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_36da437431890999cb170ff107196c80 = $(`<div id="html_36da437431890999cb170ff107196c80" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8647<br><b>Restaurants delivering:</b> 1</div>`)[0];
+                popup_09ef594572e5f23b879f31f9d2492701.setContent(html_36da437431890999cb170ff107196c80);
+            
+        
+
+        marker_a598ef8b2eba09523d023a053fdc828c.bindPopup(popup_09ef594572e5f23b879f31f9d2492701)
+        ;
+
+        
+    
+    
+            marker_a598ef8b2eba09523d023a053fdc828c.bindTooltip(
+                `<div>
+                     8647 — 1 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a598ef8b2eba09523d023a053fdc828c.setIcon(icon_72584b648c473c629cb08bb9cdff30c2);
+            
+    
+            var marker_cf7f778f52ad86c07ee65b4a4944202c = L.marker(
+                [50.9081012775, 2.64723057725],
+                {
+}
+            ).addTo(marker_cluster_ea9e8fd7d0c127289cbffc086a3d0827);
+        
+    
+            var icon_089e7114f4af3a218c548fda5330416a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_982917ca3cbf2a7ac1abf0d54b99f661 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1c2395eff8d1a2b5707d30982aaa17c6 = $(`<div id="html_1c2395eff8d1a2b5707d30982aaa17c6" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8972<br><b>Restaurants delivering:</b> 1</div>`)[0];
+                popup_982917ca3cbf2a7ac1abf0d54b99f661.setContent(html_1c2395eff8d1a2b5707d30982aaa17c6);
+            
+        
+
+        marker_cf7f778f52ad86c07ee65b4a4944202c.bindPopup(popup_982917ca3cbf2a7ac1abf0d54b99f661)
+        ;
+
+        
+    
+    
+            marker_cf7f778f52ad86c07ee65b4a4944202c.bindTooltip(
+                `<div>
+                     8972 — 1 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cf7f778f52ad86c07ee65b4a4944202c.setIcon(icon_089e7114f4af3a218c548fda5330416a);
+            
+    
+            var marker_d83082f81b85dd406f5b8792206cbff9 = L.marker(
+                [50.859147115, 2.6424318755],
+                {
+}
+            ).addTo(marker_cluster_ea9e8fd7d0c127289cbffc086a3d0827);
+        
+    
+            var icon_54d16dbcbad65e130f5eb14f29041882 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bbb076b24561a7ecaaec7c737a6c8f1e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3bc0e933e21da6ca71978d1cc7ecf540 = $(`<div id="html_3bc0e933e21da6ca71978d1cc7ecf540" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8978<br><b>Restaurants delivering:</b> 1</div>`)[0];
+                popup_bbb076b24561a7ecaaec7c737a6c8f1e.setContent(html_3bc0e933e21da6ca71978d1cc7ecf540);
+            
+        
+
+        marker_d83082f81b85dd406f5b8792206cbff9.bindPopup(popup_bbb076b24561a7ecaaec7c737a6c8f1e)
+        ;
+
+        
+    
+    
+            marker_d83082f81b85dd406f5b8792206cbff9.bindTooltip(
+                `<div>
+                     8978 — 1 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d83082f81b85dd406f5b8792206cbff9.setIcon(icon_54d16dbcbad65e130f5eb14f29041882);
+            
+    
+            var marker_f0e4179c3202cd0c7002322cf1777b20 = L.marker(
+                [51.281713315, 3.6084749235],
+                {
+}
+            ).addTo(marker_cluster_ea9e8fd7d0c127289cbffc086a3d0827);
+        
+    
+            var icon_13ae485e472ab3a992683f3f71e59bde = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac4e605661317cebca07e3ee649ea78f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_70dc812a314603f671735604ee2e931d = $(`<div id="html_70dc812a314603f671735604ee2e931d" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9988<br><b>Restaurants delivering:</b> 1</div>`)[0];
+                popup_ac4e605661317cebca07e3ee649ea78f.setContent(html_70dc812a314603f671735604ee2e931d);
+            
+        
+
+        marker_f0e4179c3202cd0c7002322cf1777b20.bindPopup(popup_ac4e605661317cebca07e3ee649ea78f)
+        ;
+
+        
+    
+    
+            marker_f0e4179c3202cd0c7002322cf1777b20.bindTooltip(
+                `<div>
+                     9988 — 1 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f0e4179c3202cd0c7002322cf1777b20.setIcon(icon_13ae485e472ab3a992683f3f71e59bde);
+            
+    
+            var marker_b75ee89b98b3aa477d9d461d2b19c08d = L.marker(
+                [50.76635165, 2.783481455],
+                {
+}
+            ).addTo(marker_cluster_ea9e8fd7d0c127289cbffc086a3d0827);
+        
+    
+            var icon_d765728dc5cf1ffb66597b65dd4e5d4a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf01745b57fa7d493ba482454c6cb8fd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_af787d83d6021ef7af15019fbc2398bb = $(`<div id="html_af787d83d6021ef7af15019fbc2398bb" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8951<br><b>Restaurants delivering:</b> 2</div>`)[0];
+                popup_cf01745b57fa7d493ba482454c6cb8fd.setContent(html_af787d83d6021ef7af15019fbc2398bb);
+            
+        
+
+        marker_b75ee89b98b3aa477d9d461d2b19c08d.bindPopup(popup_cf01745b57fa7d493ba482454c6cb8fd)
+        ;
+
+        
+    
+    
+            marker_b75ee89b98b3aa477d9d461d2b19c08d.bindTooltip(
+                `<div>
+                     8951 — 2 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b75ee89b98b3aa477d9d461d2b19c08d.setIcon(icon_d765728dc5cf1ffb66597b65dd4e5d4a);
+            
+    
+            var marker_d17c35eb8ddb5bbd3204e11439cbb4b3 = L.marker(
+                [50.78126955, 2.774534546],
+                {
+}
+            ).addTo(marker_cluster_ea9e8fd7d0c127289cbffc086a3d0827);
+        
+    
+            var icon_b6863d73e51b6c971d618b0d47f68c85 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_68914e2006ab8eeb76d18885d3729281 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_26c2b8e399bb9efd8e0e7d2f0f9ea094 = $(`<div id="html_26c2b8e399bb9efd8e0e7d2f0f9ea094" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8958<br><b>Restaurants delivering:</b> 2</div>`)[0];
+                popup_68914e2006ab8eeb76d18885d3729281.setContent(html_26c2b8e399bb9efd8e0e7d2f0f9ea094);
+            
+        
+
+        marker_d17c35eb8ddb5bbd3204e11439cbb4b3.bindPopup(popup_68914e2006ab8eeb76d18885d3729281)
+        ;
+
+        
+    
+    
+            marker_d17c35eb8ddb5bbd3204e11439cbb4b3.bindTooltip(
+                `<div>
+                     8958 — 2 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d17c35eb8ddb5bbd3204e11439cbb4b3.setIcon(icon_b6863d73e51b6c971d618b0d47f68c85);
+            
+    
+            var marker_a1bc0a64ad42245cbd280e0bc9260dbb = L.marker(
+                [51.28232923, 3.54615128],
+                {
+}
+            ).addTo(marker_cluster_ea9e8fd7d0c127289cbffc086a3d0827);
+        
+    
+            var icon_2326ea17ede9c0b9f23305cd592c1e01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fcb0e62be7d60c1055ef4efbeab64daa = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d4bda2b48c6dcdbd0b2261c86fba0c90 = $(`<div id="html_d4bda2b48c6dcdbd0b2261c86fba0c90" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9981<br><b>Restaurants delivering:</b> 2</div>`)[0];
+                popup_fcb0e62be7d60c1055ef4efbeab64daa.setContent(html_d4bda2b48c6dcdbd0b2261c86fba0c90);
+            
+        
+
+        marker_a1bc0a64ad42245cbd280e0bc9260dbb.bindPopup(popup_fcb0e62be7d60c1055ef4efbeab64daa)
+        ;
+
+        
+    
+    
+            marker_a1bc0a64ad42245cbd280e0bc9260dbb.bindTooltip(
+                `<div>
+                     9981 — 2 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a1bc0a64ad42245cbd280e0bc9260dbb.setIcon(icon_2326ea17ede9c0b9f23305cd592c1e01);
+            
+    
+            var marker_1995c1d7cb32961eac416a29a623f7a8 = L.marker(
+                [51.25697429, 3.5909368695],
+                {
+}
+            ).addTo(marker_cluster_ea9e8fd7d0c127289cbffc086a3d0827);
+        
+    
+            var icon_dbfcfc136b760295f0436d96b380da7d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95979215e90de6688953d5c00f4ecf00 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b953847775633f8fc60d3f2abc2eaa0e = $(`<div id="html_b953847775633f8fc60d3f2abc2eaa0e" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9982<br><b>Restaurants delivering:</b> 2</div>`)[0];
+                popup_95979215e90de6688953d5c00f4ecf00.setContent(html_b953847775633f8fc60d3f2abc2eaa0e);
+            
+        
+
+        marker_1995c1d7cb32961eac416a29a623f7a8.bindPopup(popup_95979215e90de6688953d5c00f4ecf00)
+        ;
+
+        
+    
+    
+            marker_1995c1d7cb32961eac416a29a623f7a8.bindTooltip(
+                `<div>
+                     9982 — 2 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1995c1d7cb32961eac416a29a623f7a8.setIcon(icon_dbfcfc136b760295f0436d96b380da7d);
+            
+    
+            var marker_1140a660f11670c79e836a13db8d1804 = L.marker(
+                [51.25599933, 3.415894183],
+                {
+}
+            ).addTo(marker_cluster_ea9e8fd7d0c127289cbffc086a3d0827);
+        
+    
+            var icon_4cf5efd235d7368d11c9a7889ae0f580 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e7e4105c785cfe7fe7e70f2048461623 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_be71e86bda074c88d583c2607154e956 = $(`<div id="html_be71e86bda074c88d583c2607154e956" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9992<br><b>Restaurants delivering:</b> 2</div>`)[0];
+                popup_e7e4105c785cfe7fe7e70f2048461623.setContent(html_be71e86bda074c88d583c2607154e956);
+            
+        
+
+        marker_1140a660f11670c79e836a13db8d1804.bindPopup(popup_e7e4105c785cfe7fe7e70f2048461623)
+        ;
+
+        
+    
+    
+            marker_1140a660f11670c79e836a13db8d1804.bindTooltip(
+                `<div>
+                     9992 — 2 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1140a660f11670c79e836a13db8d1804.setIcon(icon_4cf5efd235d7368d11c9a7889ae0f580);
+            
+    
+            var marker_b894b6ec48d7147aa62acc5892b25586 = L.marker(
+                [51.487513299999996, 4.782082962],
+                {
+}
+            ).addTo(marker_cluster_ea9e8fd7d0c127289cbffc086a3d0827);
+        
+    
+            var icon_91e40d5f0332676b5759fcaffcd28c7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f44e3726e81730afca517afef1b9bba3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_975a464cdc83bc08aff41dbc68415b99 = $(`<div id="html_975a464cdc83bc08aff41dbc68415b99" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 2328<br><b>Restaurants delivering:</b> 3</div>`)[0];
+                popup_f44e3726e81730afca517afef1b9bba3.setContent(html_975a464cdc83bc08aff41dbc68415b99);
+            
+        
+
+        marker_b894b6ec48d7147aa62acc5892b25586.bindPopup(popup_f44e3726e81730afca517afef1b9bba3)
+        ;
+
+        
+    
+    
+            marker_b894b6ec48d7147aa62acc5892b25586.bindTooltip(
+                `<div>
+                     2328 — 3 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b894b6ec48d7147aa62acc5892b25586.setIcon(icon_91e40d5f0332676b5759fcaffcd28c7f);
+            
+    
+            var marker_9aef70e99a78ac44287f4ba62d0a1ce7 = L.marker(
+                [50.97088273375, 2.895798584625],
+                {
+}
+            ).addTo(marker_cluster_ea9e8fd7d0c127289cbffc086a3d0827);
+        
+    
+            var icon_d0f88adfd1ff706bc16db58c9fbaa3bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_07d8b63a6920ae02e2544fd42fa835e0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_86c929ed6789322e4607756c6c48fb85 = $(`<div id="html_86c929ed6789322e4607756c6c48fb85" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8650<br><b>Restaurants delivering:</b> 3</div>`)[0];
+                popup_07d8b63a6920ae02e2544fd42fa835e0.setContent(html_86c929ed6789322e4607756c6c48fb85);
+            
+        
+
+        marker_9aef70e99a78ac44287f4ba62d0a1ce7.bindPopup(popup_07d8b63a6920ae02e2544fd42fa835e0)
+        ;
+
+        
+    
+    
+            marker_9aef70e99a78ac44287f4ba62d0a1ce7.bindTooltip(
+                `<div>
+                     8650 — 3 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9aef70e99a78ac44287f4ba62d0a1ce7.setIcon(icon_d0f88adfd1ff706bc16db58c9fbaa3bc);
+            
+    
+            var marker_96307cf0a707b6d7b7cd5b2c787e3522 = L.marker(
+                [50.74581163, 2.826595381],
+                {
+}
+            ).addTo(marker_cluster_ea9e8fd7d0c127289cbffc086a3d0827);
+        
+    
+            var icon_26cc0bfb96dd039c398db817d6cf8927 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_41b6616734daadadd3df282aa2dbf046 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fec1bd592269b9924990e29d2f761b0c = $(`<div id="html_fec1bd592269b9924990e29d2f761b0c" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8950<br><b>Restaurants delivering:</b> 3</div>`)[0];
+                popup_41b6616734daadadd3df282aa2dbf046.setContent(html_fec1bd592269b9924990e29d2f761b0c);
+            
+        
+
+        marker_96307cf0a707b6d7b7cd5b2c787e3522.bindPopup(popup_41b6616734daadadd3df282aa2dbf046)
+        ;
+
+        
+    
+    
+            marker_96307cf0a707b6d7b7cd5b2c787e3522.bindTooltip(
+                `<div>
+                     8950 — 3 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_96307cf0a707b6d7b7cd5b2c787e3522.setIcon(icon_26cc0bfb96dd039c398db817d6cf8927);
+            
+    
+            var marker_a96069bbba2696449ef85192212313a2 = L.marker(
+                [50.836412685, 3.6925644275],
+                {
+}
+            ).addTo(marker_cluster_ea9e8fd7d0c127289cbffc086a3d0827);
+        
+    
+            var icon_169df07eb171890714b24a41a9c715e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e4256155c38286c31785d09f5411836c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ce493bb00813c01137507de2bbd33ea4 = $(`<div id="html_ce493bb00813c01137507de2bbd33ea4" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9667<br><b>Restaurants delivering:</b> 3</div>`)[0];
+                popup_e4256155c38286c31785d09f5411836c.setContent(html_ce493bb00813c01137507de2bbd33ea4);
+            
+        
+
+        marker_a96069bbba2696449ef85192212313a2.bindPopup(popup_e4256155c38286c31785d09f5411836c)
+        ;
+
+        
+    
+    
+            marker_a96069bbba2696449ef85192212313a2.bindTooltip(
+                `<div>
+                     9667 — 3 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a96069bbba2696449ef85192212313a2.setIcon(icon_169df07eb171890714b24a41a9c715e9);
+            
+    
+            marker_cluster_ea9e8fd7d0c127289cbffc086a3d0827.addTo(feature_group_5ff3f65f57e0014284df374bbbb38793);
+        
+    
+            var feature_group_85b748c9e4fbb02f41e4dd418566e5c7 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_4851a9982c03984ea913873c220b44a8 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_97ae47765d94e51b89877adbae6372bd = L.marker(
+                [50.9145181475, 2.7427879295],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_b6be4c085a7d8c1adaadfab495c9a264 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec7a15e7e43fd506a31b54906a2b6e94 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fbd365c49093c9dfaa2fb42a16037f2f = $(`<div id="html_fbd365c49093c9dfaa2fb42a16037f2f" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8640<br><b>Restaurants delivering:</b> 1</div>`)[0];
+                popup_ec7a15e7e43fd506a31b54906a2b6e94.setContent(html_fbd365c49093c9dfaa2fb42a16037f2f);
+            
+        
+
+        marker_97ae47765d94e51b89877adbae6372bd.bindPopup(popup_ec7a15e7e43fd506a31b54906a2b6e94)
+        ;
+
+        
+    
+    
+            marker_97ae47765d94e51b89877adbae6372bd.bindTooltip(
+                `<div>
+                     8640 — 1 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_97ae47765d94e51b89877adbae6372bd.setIcon(icon_b6be4c085a7d8c1adaadfab495c9a264);
+            
+    
+            var marker_73f7649d8fdb948cc9f87858a1fca953 = L.marker(
+                [50.96688798, 2.7664292246],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_fd273cfac9537632fcfa6cb590a53f49 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_167acd46e880f012dc0f4751b6116483 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d31a98f8edf722eb3a0a5e269e1791da = $(`<div id="html_d31a98f8edf722eb3a0a5e269e1791da" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8647<br><b>Restaurants delivering:</b> 1</div>`)[0];
+                popup_167acd46e880f012dc0f4751b6116483.setContent(html_d31a98f8edf722eb3a0a5e269e1791da);
+            
+        
+
+        marker_73f7649d8fdb948cc9f87858a1fca953.bindPopup(popup_167acd46e880f012dc0f4751b6116483)
+        ;
+
+        
+    
+    
+            marker_73f7649d8fdb948cc9f87858a1fca953.bindTooltip(
+                `<div>
+                     8647 — 1 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_73f7649d8fdb948cc9f87858a1fca953.setIcon(icon_fd273cfac9537632fcfa6cb590a53f49);
+            
+    
+            var marker_026e4818c07138594348ac94a10b0098 = L.marker(
+                [50.9081012775, 2.64723057725],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_36057debd6d4e5bd00164ae42affd1a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_560ba661db8a5084904f239bb9a28b00 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1ccd9ecfa0955d707365026d36a08ec5 = $(`<div id="html_1ccd9ecfa0955d707365026d36a08ec5" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8972<br><b>Restaurants delivering:</b> 1</div>`)[0];
+                popup_560ba661db8a5084904f239bb9a28b00.setContent(html_1ccd9ecfa0955d707365026d36a08ec5);
+            
+        
+
+        marker_026e4818c07138594348ac94a10b0098.bindPopup(popup_560ba661db8a5084904f239bb9a28b00)
+        ;
+
+        
+    
+    
+            marker_026e4818c07138594348ac94a10b0098.bindTooltip(
+                `<div>
+                     8972 — 1 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_026e4818c07138594348ac94a10b0098.setIcon(icon_36057debd6d4e5bd00164ae42affd1a1);
+            
+    
+            var marker_65c3b6bfccf877d49a350f892864d2b3 = L.marker(
+                [50.859147115, 2.6424318755],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_01647d67a4db9b2bb8656484bf6854f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1fab75bc1a43f5b01ff9dcb5a2b02017 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_08d866ae539b7952298d4d290d369024 = $(`<div id="html_08d866ae539b7952298d4d290d369024" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8978<br><b>Restaurants delivering:</b> 1</div>`)[0];
+                popup_1fab75bc1a43f5b01ff9dcb5a2b02017.setContent(html_08d866ae539b7952298d4d290d369024);
+            
+        
+
+        marker_65c3b6bfccf877d49a350f892864d2b3.bindPopup(popup_1fab75bc1a43f5b01ff9dcb5a2b02017)
+        ;
+
+        
+    
+    
+            marker_65c3b6bfccf877d49a350f892864d2b3.bindTooltip(
+                `<div>
+                     8978 — 1 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_65c3b6bfccf877d49a350f892864d2b3.setIcon(icon_01647d67a4db9b2bb8656484bf6854f5);
+            
+    
+            var marker_bdcce2a0eaf5479588b9d3da2110f22f = L.marker(
+                [51.281713315, 3.6084749235],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_166cb97a5c4f36fcdbe7255044bf9461 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_589c97cdf6ee23ab9179f714ac3bc533 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ea8d78529ff1f83896669bcd1199fe41 = $(`<div id="html_ea8d78529ff1f83896669bcd1199fe41" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9988<br><b>Restaurants delivering:</b> 1</div>`)[0];
+                popup_589c97cdf6ee23ab9179f714ac3bc533.setContent(html_ea8d78529ff1f83896669bcd1199fe41);
+            
+        
+
+        marker_bdcce2a0eaf5479588b9d3da2110f22f.bindPopup(popup_589c97cdf6ee23ab9179f714ac3bc533)
+        ;
+
+        
+    
+    
+            marker_bdcce2a0eaf5479588b9d3da2110f22f.bindTooltip(
+                `<div>
+                     9988 — 1 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bdcce2a0eaf5479588b9d3da2110f22f.setIcon(icon_166cb97a5c4f36fcdbe7255044bf9461);
+            
+    
+            var marker_e7e80ad49b9e7ef84ee008fff026221e = L.marker(
+                [50.76635165, 2.783481455],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_b3874aa3dbed78122d7496eaac979f4f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48192b77f9a3654e17de0cf896343f93 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cdd8dc481f6dcf4495554e1889ddd5c7 = $(`<div id="html_cdd8dc481f6dcf4495554e1889ddd5c7" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8951<br><b>Restaurants delivering:</b> 2</div>`)[0];
+                popup_48192b77f9a3654e17de0cf896343f93.setContent(html_cdd8dc481f6dcf4495554e1889ddd5c7);
+            
+        
+
+        marker_e7e80ad49b9e7ef84ee008fff026221e.bindPopup(popup_48192b77f9a3654e17de0cf896343f93)
+        ;
+
+        
+    
+    
+            marker_e7e80ad49b9e7ef84ee008fff026221e.bindTooltip(
+                `<div>
+                     8951 — 2 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e7e80ad49b9e7ef84ee008fff026221e.setIcon(icon_b3874aa3dbed78122d7496eaac979f4f);
+            
+    
+            var marker_bfe083edb1c13b35803920fd34f19702 = L.marker(
+                [50.78126955, 2.774534546],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_579d5d63de9554976eccb21aa5fcb979 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86338f0ee66005de446b328a536de6e6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5f34eac6f00bfad15bdebc165069293f = $(`<div id="html_5f34eac6f00bfad15bdebc165069293f" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8958<br><b>Restaurants delivering:</b> 2</div>`)[0];
+                popup_86338f0ee66005de446b328a536de6e6.setContent(html_5f34eac6f00bfad15bdebc165069293f);
+            
+        
+
+        marker_bfe083edb1c13b35803920fd34f19702.bindPopup(popup_86338f0ee66005de446b328a536de6e6)
+        ;
+
+        
+    
+    
+            marker_bfe083edb1c13b35803920fd34f19702.bindTooltip(
+                `<div>
+                     8958 — 2 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bfe083edb1c13b35803920fd34f19702.setIcon(icon_579d5d63de9554976eccb21aa5fcb979);
+            
+    
+            var marker_bbe8e6ed8e01e9297a39ea44c68aa72b = L.marker(
+                [51.28232923, 3.54615128],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_9300e1fe20c279b9c1646c1defbfb170 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_246face6ef3c80ccdc8ae304df86f4dc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_028edfae52bd5c2f7e8cd951b7cbeb20 = $(`<div id="html_028edfae52bd5c2f7e8cd951b7cbeb20" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9981<br><b>Restaurants delivering:</b> 2</div>`)[0];
+                popup_246face6ef3c80ccdc8ae304df86f4dc.setContent(html_028edfae52bd5c2f7e8cd951b7cbeb20);
+            
+        
+
+        marker_bbe8e6ed8e01e9297a39ea44c68aa72b.bindPopup(popup_246face6ef3c80ccdc8ae304df86f4dc)
+        ;
+
+        
+    
+    
+            marker_bbe8e6ed8e01e9297a39ea44c68aa72b.bindTooltip(
+                `<div>
+                     9981 — 2 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bbe8e6ed8e01e9297a39ea44c68aa72b.setIcon(icon_9300e1fe20c279b9c1646c1defbfb170);
+            
+    
+            var marker_8114f42fc723df616ad72e42d310fede = L.marker(
+                [51.25697429, 3.5909368695],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_a6050e35148fbd03350d503a7cdf7a2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b62062b4a97e770c0e80fdd5bf2d7286 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1a466dd5aed803cbf12e06316e18f23b = $(`<div id="html_1a466dd5aed803cbf12e06316e18f23b" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9982<br><b>Restaurants delivering:</b> 2</div>`)[0];
+                popup_b62062b4a97e770c0e80fdd5bf2d7286.setContent(html_1a466dd5aed803cbf12e06316e18f23b);
+            
+        
+
+        marker_8114f42fc723df616ad72e42d310fede.bindPopup(popup_b62062b4a97e770c0e80fdd5bf2d7286)
+        ;
+
+        
+    
+    
+            marker_8114f42fc723df616ad72e42d310fede.bindTooltip(
+                `<div>
+                     9982 — 2 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8114f42fc723df616ad72e42d310fede.setIcon(icon_a6050e35148fbd03350d503a7cdf7a2c);
+            
+    
+            var marker_e7c3762b5da5122b64642e4dd6d2ab87 = L.marker(
+                [51.25599933, 3.415894183],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_cc1c62099fbd1a24529ce7e258334af2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_49996d3b39f03a3a38cd60919ef8464e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a6997d2ac0ac994453cb4289e7b27f03 = $(`<div id="html_a6997d2ac0ac994453cb4289e7b27f03" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9992<br><b>Restaurants delivering:</b> 2</div>`)[0];
+                popup_49996d3b39f03a3a38cd60919ef8464e.setContent(html_a6997d2ac0ac994453cb4289e7b27f03);
+            
+        
+
+        marker_e7c3762b5da5122b64642e4dd6d2ab87.bindPopup(popup_49996d3b39f03a3a38cd60919ef8464e)
+        ;
+
+        
+    
+    
+            marker_e7c3762b5da5122b64642e4dd6d2ab87.bindTooltip(
+                `<div>
+                     9992 — 2 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e7c3762b5da5122b64642e4dd6d2ab87.setIcon(icon_cc1c62099fbd1a24529ce7e258334af2);
+            
+    
+            var marker_5e20f2c7ec4ad91cc949d15f9b43f0e8 = L.marker(
+                [51.487513299999996, 4.782082962],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_1e51512e37185ea47b8612b3b4b2abbc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_054f61729269a2e05c270fea36eb876f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3b4c4b0e773ef833103f2c5beeb42d6f = $(`<div id="html_3b4c4b0e773ef833103f2c5beeb42d6f" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 2328<br><b>Restaurants delivering:</b> 3</div>`)[0];
+                popup_054f61729269a2e05c270fea36eb876f.setContent(html_3b4c4b0e773ef833103f2c5beeb42d6f);
+            
+        
+
+        marker_5e20f2c7ec4ad91cc949d15f9b43f0e8.bindPopup(popup_054f61729269a2e05c270fea36eb876f)
+        ;
+
+        
+    
+    
+            marker_5e20f2c7ec4ad91cc949d15f9b43f0e8.bindTooltip(
+                `<div>
+                     2328 — 3 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5e20f2c7ec4ad91cc949d15f9b43f0e8.setIcon(icon_1e51512e37185ea47b8612b3b4b2abbc);
+            
+    
+            var marker_799648252c58d34731c7d78da1b9188c = L.marker(
+                [50.97088273375, 2.895798584625],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_f19c3a3812192f70e34dddd7da3c9977 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a34565e54259f093ecc1ab193304a07 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_68b95c5211fc1db4dc20f773c9fad487 = $(`<div id="html_68b95c5211fc1db4dc20f773c9fad487" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8650<br><b>Restaurants delivering:</b> 3</div>`)[0];
+                popup_3a34565e54259f093ecc1ab193304a07.setContent(html_68b95c5211fc1db4dc20f773c9fad487);
+            
+        
+
+        marker_799648252c58d34731c7d78da1b9188c.bindPopup(popup_3a34565e54259f093ecc1ab193304a07)
+        ;
+
+        
+    
+    
+            marker_799648252c58d34731c7d78da1b9188c.bindTooltip(
+                `<div>
+                     8650 — 3 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_799648252c58d34731c7d78da1b9188c.setIcon(icon_f19c3a3812192f70e34dddd7da3c9977);
+            
+    
+            var marker_21b11384e0c3320f9994f7be82d3f8bf = L.marker(
+                [50.74581163, 2.826595381],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_ef69f3b2c0aba002424d5eb1da489e5e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77d0562ae6a7db1451b53791755236ac = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ac691399dd3ff939321966e1d2b8f6a2 = $(`<div id="html_ac691399dd3ff939321966e1d2b8f6a2" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8950<br><b>Restaurants delivering:</b> 3</div>`)[0];
+                popup_77d0562ae6a7db1451b53791755236ac.setContent(html_ac691399dd3ff939321966e1d2b8f6a2);
+            
+        
+
+        marker_21b11384e0c3320f9994f7be82d3f8bf.bindPopup(popup_77d0562ae6a7db1451b53791755236ac)
+        ;
+
+        
+    
+    
+            marker_21b11384e0c3320f9994f7be82d3f8bf.bindTooltip(
+                `<div>
+                     8950 — 3 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_21b11384e0c3320f9994f7be82d3f8bf.setIcon(icon_ef69f3b2c0aba002424d5eb1da489e5e);
+            
+    
+            var marker_f663ba6fc11ecfb631ad0aed170839ca = L.marker(
+                [50.836412685, 3.6925644275],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_ad290b0b780502f05ea60b360edc8b96 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_539999a945d862cb5bdd3d3995e97251 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_da9223441fa6369c5cefaaa4f896fb4e = $(`<div id="html_da9223441fa6369c5cefaaa4f896fb4e" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9667<br><b>Restaurants delivering:</b> 3</div>`)[0];
+                popup_539999a945d862cb5bdd3d3995e97251.setContent(html_da9223441fa6369c5cefaaa4f896fb4e);
+            
+        
+
+        marker_f663ba6fc11ecfb631ad0aed170839ca.bindPopup(popup_539999a945d862cb5bdd3d3995e97251)
+        ;
+
+        
+    
+    
+            marker_f663ba6fc11ecfb631ad0aed170839ca.bindTooltip(
+                `<div>
+                     9667 — 3 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f663ba6fc11ecfb631ad0aed170839ca.setIcon(icon_ad290b0b780502f05ea60b360edc8b96);
+            
+    
+            var marker_8ed9e201b1d842f74c2154a73881120f = L.marker(
+                [50.89693897, 4.9125709795],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_85e6eb55c3ed7dff076919e803420652 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cfe73f7ec232f0d00b2993de553e088d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_13ebd8e96db7bd8d6abc0b50fbcffb41 = $(`<div id="html_13ebd8e96db7bd8d6abc0b50fbcffb41" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3391<br><b>Restaurants delivering:</b> 4</div>`)[0];
+                popup_cfe73f7ec232f0d00b2993de553e088d.setContent(html_13ebd8e96db7bd8d6abc0b50fbcffb41);
+            
+        
+
+        marker_8ed9e201b1d842f74c2154a73881120f.bindPopup(popup_cfe73f7ec232f0d00b2993de553e088d)
+        ;
+
+        
+    
+    
+            marker_8ed9e201b1d842f74c2154a73881120f.bindTooltip(
+                `<div>
+                     3391 — 4 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8ed9e201b1d842f74c2154a73881120f.setIcon(icon_85e6eb55c3ed7dff076919e803420652);
+            
+    
+            var marker_18a3a698cd7acc9c4edcf26baa6e73d9 = L.marker(
+                [50.918146433333334, 4.953562318666667],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_bf241a909acd492c75aeaa97a8b1346e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d077ed5dbef621343769cf1a9ae3ee76 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_293d5e32712652db83c94a04df922520 = $(`<div id="html_293d5e32712652db83c94a04df922520" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3461<br><b>Restaurants delivering:</b> 4</div>`)[0];
+                popup_d077ed5dbef621343769cf1a9ae3ee76.setContent(html_293d5e32712652db83c94a04df922520);
+            
+        
+
+        marker_18a3a698cd7acc9c4edcf26baa6e73d9.bindPopup(popup_d077ed5dbef621343769cf1a9ae3ee76)
+        ;
+
+        
+    
+    
+            marker_18a3a698cd7acc9c4edcf26baa6e73d9.bindTooltip(
+                `<div>
+                     3461 — 4 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_18a3a698cd7acc9c4edcf26baa6e73d9.setIcon(icon_bf241a909acd492c75aeaa97a8b1346e);
+            
+    
+            var marker_bc9b4295f7f10066b21116746312befa = L.marker(
+                [50.73117828, 5.880955598],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_37ea1b9932f469874f201a45426aa822 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b6ea5302fb717412c5a8d0638dbdfc78 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c0b506152f9b33f04b9538a4d8947afa = $(`<div id="html_c0b506152f9b33f04b9538a4d8947afa" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3791<br><b>Restaurants delivering:</b> 4</div>`)[0];
+                popup_b6ea5302fb717412c5a8d0638dbdfc78.setContent(html_c0b506152f9b33f04b9538a4d8947afa);
+            
+        
+
+        marker_bc9b4295f7f10066b21116746312befa.bindPopup(popup_b6ea5302fb717412c5a8d0638dbdfc78)
+        ;
+
+        
+    
+    
+            marker_bc9b4295f7f10066b21116746312befa.bindTooltip(
+                `<div>
+                     3791 — 4 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bc9b4295f7f10066b21116746312befa.setIcon(icon_37ea1b9932f469874f201a45426aa822);
+            
+    
+            var marker_f08e58ec8891ac1ab3789cebcb05f991 = L.marker(
+                [50.75208255, 5.862045331],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_f5435f53bd51a5b088446a1a1cdfa8e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00a387a3d8159384429d4bbbebe48a52 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_905a24d19e71dae6523ed95c5501a5f9 = $(`<div id="html_905a24d19e71dae6523ed95c5501a5f9" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3793<br><b>Restaurants delivering:</b> 4</div>`)[0];
+                popup_00a387a3d8159384429d4bbbebe48a52.setContent(html_905a24d19e71dae6523ed95c5501a5f9);
+            
+        
+
+        marker_f08e58ec8891ac1ab3789cebcb05f991.bindPopup(popup_00a387a3d8159384429d4bbbebe48a52)
+        ;
+
+        
+    
+    
+            marker_f08e58ec8891ac1ab3789cebcb05f991.bindTooltip(
+                `<div>
+                     3793 — 4 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f08e58ec8891ac1ab3789cebcb05f991.setIcon(icon_f5435f53bd51a5b088446a1a1cdfa8e6);
+            
+    
+            var marker_3fd501e0b33574ea5d39901c4978a234 = L.marker(
+                [50.79881717000001, 2.772978307],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_102542edb62e959bfb19a763b917b0b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f96829e864b472341000468cf08785d9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a4d1097c4fde38000968cff04ce0ffe8 = $(`<div id="html_a4d1097c4fde38000968cff04ce0ffe8" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8954<br><b>Restaurants delivering:</b> 4</div>`)[0];
+                popup_f96829e864b472341000468cf08785d9.setContent(html_a4d1097c4fde38000968cff04ce0ffe8);
+            
+        
+
+        marker_3fd501e0b33574ea5d39901c4978a234.bindPopup(popup_f96829e864b472341000468cf08785d9)
+        ;
+
+        
+    
+    
+            marker_3fd501e0b33574ea5d39901c4978a234.bindTooltip(
+                `<div>
+                     8954 — 4 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3fd501e0b33574ea5d39901c4978a234.setIcon(icon_102542edb62e959bfb19a763b917b0b9);
+            
+    
+            var marker_30aae1f2889da19313c869438b901a72 = L.marker(
+                [50.76407732, 2.899200394],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_d12c008253fd7ea335cec7bbed72c6bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6fe0d07c52074242967a53b0bb093bfa = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ea04f529b16f0c463158529076d1cd63 = $(`<div id="html_ea04f529b16f0c463158529076d1cd63" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8957<br><b>Restaurants delivering:</b> 4</div>`)[0];
+                popup_6fe0d07c52074242967a53b0bb093bfa.setContent(html_ea04f529b16f0c463158529076d1cd63);
+            
+        
+
+        marker_30aae1f2889da19313c869438b901a72.bindPopup(popup_6fe0d07c52074242967a53b0bb093bfa)
+        ;
+
+        
+    
+    
+            marker_30aae1f2889da19313c869438b901a72.bindTooltip(
+                `<div>
+                     8957 — 4 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_30aae1f2889da19313c869438b901a72.setIcon(icon_d12c008253fd7ea335cec7bbed72c6bf);
+            
+    
+            var marker_947389b5dbaefc4b3453ddbc892fc05f = L.marker(
+                [50.891057525, 5.0033775145],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_68d6fd5a559bfc3f0d2eb16feb5e9ebf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_952ab3e17d81b5dafa4f8816f664ae74 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_925116d2f5701f3eeb7cf73613acd900 = $(`<div id="html_925116d2f5701f3eeb7cf73613acd900" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3472<br><b>Restaurants delivering:</b> 5</div>`)[0];
+                popup_952ab3e17d81b5dafa4f8816f664ae74.setContent(html_925116d2f5701f3eeb7cf73613acd900);
+            
+        
+
+        marker_947389b5dbaefc4b3453ddbc892fc05f.bindPopup(popup_952ab3e17d81b5dafa4f8816f664ae74)
+        ;
+
+        
+    
+    
+            marker_947389b5dbaefc4b3453ddbc892fc05f.bindTooltip(
+                `<div>
+                     3472 — 5 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_947389b5dbaefc4b3453ddbc892fc05f.setIcon(icon_68d6fd5a559bfc3f0d2eb16feb5e9ebf);
+            
+    
+            var marker_421e52aaacfea90e7f172e85fc0ca429 = L.marker(
+                [50.91645995, 5.004291699],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_696e29328655158ee2396d36acf60732 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_637cb8400b01e8444c60778633f1c04a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3e4973a245ff2bc8bcf1bb0f809de808 = $(`<div id="html_3e4973a245ff2bc8bcf1bb0f809de808" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3473<br><b>Restaurants delivering:</b> 5</div>`)[0];
+                popup_637cb8400b01e8444c60778633f1c04a.setContent(html_3e4973a245ff2bc8bcf1bb0f809de808);
+            
+        
+
+        marker_421e52aaacfea90e7f172e85fc0ca429.bindPopup(popup_637cb8400b01e8444c60778633f1c04a)
+        ;
+
+        
+    
+    
+            marker_421e52aaacfea90e7f172e85fc0ca429.bindTooltip(
+                `<div>
+                     3473 — 5 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_421e52aaacfea90e7f172e85fc0ca429.setIcon(icon_696e29328655158ee2396d36acf60732);
+            
+    
+            var marker_74037d667b912fa712ab30df89fde6b7 = L.marker(
+                [50.7477335, 3.408196394],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_d2ce995fccd830f5058a3b4878fa8ccd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be2589e9be5c8e7d2ac8a78c789c2a02 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_81f9822504e906ee186758cdd7628746 = $(`<div id="html_81f9822504e906ee186758cdd7628746" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8583<br><b>Restaurants delivering:</b> 5</div>`)[0];
+                popup_be2589e9be5c8e7d2ac8a78c789c2a02.setContent(html_81f9822504e906ee186758cdd7628746);
+            
+        
+
+        marker_74037d667b912fa712ab30df89fde6b7.bindPopup(popup_be2589e9be5c8e7d2ac8a78c789c2a02)
+        ;
+
+        
+    
+    
+            marker_74037d667b912fa712ab30df89fde6b7.bindTooltip(
+                `<div>
+                     8583 — 5 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_74037d667b912fa712ab30df89fde6b7.setIcon(icon_d2ce995fccd830f5058a3b4878fa8ccd);
+            
+    
+            var marker_a78e4185d4a8fd0c095cb5a3ab9c6fc4 = L.marker(
+                [51.03923486714286, 2.8542746270476194],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_51bf6addd2bb398beffa2da678da1361 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4660bb9145f726815abd442f2136d586 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5dbb1d3c6b36c0bcafd2e4f816f80484 = $(`<div id="html_5dbb1d3c6b36c0bcafd2e4f816f80484" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8600<br><b>Restaurants delivering:</b> 5</div>`)[0];
+                popup_4660bb9145f726815abd442f2136d586.setContent(html_5dbb1d3c6b36c0bcafd2e4f816f80484);
+            
+        
+
+        marker_a78e4185d4a8fd0c095cb5a3ab9c6fc4.bindPopup(popup_4660bb9145f726815abd442f2136d586)
+        ;
+
+        
+    
+    
+            marker_a78e4185d4a8fd0c095cb5a3ab9c6fc4.bindTooltip(
+                `<div>
+                     8600 — 5 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a78e4185d4a8fd0c095cb5a3ab9c6fc4.setIcon(icon_51bf6addd2bb398beffa2da678da1361);
+            
+    
+            var marker_dfad725fedccd889169a8f5d4802205b = L.marker(
+                [50.75980762, 2.85446648],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_85d992f9064c54c76022e0a18d7e8910 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_015ee4e9b683377fe1c8821141b04d6b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_272d0482441c0c95aed4415ff40f4601 = $(`<div id="html_272d0482441c0c95aed4415ff40f4601" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8952<br><b>Restaurants delivering:</b> 5</div>`)[0];
+                popup_015ee4e9b683377fe1c8821141b04d6b.setContent(html_272d0482441c0c95aed4415ff40f4601);
+            
+        
+
+        marker_dfad725fedccd889169a8f5d4802205b.bindPopup(popup_015ee4e9b683377fe1c8821141b04d6b)
+        ;
+
+        
+    
+    
+            marker_dfad725fedccd889169a8f5d4802205b.bindTooltip(
+                `<div>
+                     8952 — 5 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dfad725fedccd889169a8f5d4802205b.setIcon(icon_85d992f9064c54c76022e0a18d7e8910);
+            
+    
+            var marker_e94ef9dc2735a84c05b9d8c54a6d5b13 = L.marker(
+                [50.88598484, 3.685536349],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_b8a63231740a7077c282b9695ed4e991 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6920eacaa2599bf3886d5b9fa883c1f2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_706f49af4a14bc604122ff7220456a6f = $(`<div id="html_706f49af4a14bc604122ff7220456a6f" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9636<br><b>Restaurants delivering:</b> 5</div>`)[0];
+                popup_6920eacaa2599bf3886d5b9fa883c1f2.setContent(html_706f49af4a14bc604122ff7220456a6f);
+            
+        
+
+        marker_e94ef9dc2735a84c05b9d8c54a6d5b13.bindPopup(popup_6920eacaa2599bf3886d5b9fa883c1f2)
+        ;
+
+        
+    
+    
+            marker_e94ef9dc2735a84c05b9d8c54a6d5b13.bindTooltip(
+                `<div>
+                     9636 — 5 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e94ef9dc2735a84c05b9d8c54a6d5b13.setIcon(icon_b8a63231740a7077c282b9695ed4e991);
+            
+    
+            var marker_98ab547baae1c87eba63f65582cd2482 = L.marker(
+                [50.7895786, 3.678213941],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_06359c13009bbb9a05dbd447025ada41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da104357e49153aff5c98f274c740d83 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5785ece5c69754bfffc7c7b7cc58b047 = $(`<div id="html_5785ece5c69754bfffc7c7b7cc58b047" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9688<br><b>Restaurants delivering:</b> 5</div>`)[0];
+                popup_da104357e49153aff5c98f274c740d83.setContent(html_5785ece5c69754bfffc7c7b7cc58b047);
+            
+        
+
+        marker_98ab547baae1c87eba63f65582cd2482.bindPopup(popup_da104357e49153aff5c98f274c740d83)
+        ;
+
+        
+    
+    
+            marker_98ab547baae1c87eba63f65582cd2482.bindTooltip(
+                `<div>
+                     9688 — 5 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_98ab547baae1c87eba63f65582cd2482.setIcon(icon_06359c13009bbb9a05dbd447025ada41);
+            
+    
+            var marker_c321594b5994c5f689a9950e1e65be4a = L.marker(
+                [51.08792214, 3.491082041],
+                {
+}
+            ).addTo(marker_cluster_4851a9982c03984ea913873c220b44a8);
+        
+    
+            var icon_ac4cc4fc05c8bb181573c7c71cff0f60 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a10d1f266ad244499331ef2e3cff2e0f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a3498a26eded9ef21227822f1c9762af = $(`<div id="html_a3498a26eded9ef21227822f1c9762af" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9881<br><b>Restaurants delivering:</b> 5</div>`)[0];
+                popup_a10d1f266ad244499331ef2e3cff2e0f.setContent(html_a3498a26eded9ef21227822f1c9762af);
+            
+        
+
+        marker_c321594b5994c5f689a9950e1e65be4a.bindPopup(popup_a10d1f266ad244499331ef2e3cff2e0f)
+        ;
+
+        
+    
+    
+            marker_c321594b5994c5f689a9950e1e65be4a.bindTooltip(
+                `<div>
+                     9881 — 5 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c321594b5994c5f689a9950e1e65be4a.setIcon(icon_ac4cc4fc05c8bb181573c7c71cff0f60);
+            
+    
+            marker_cluster_4851a9982c03984ea913873c220b44a8.addTo(feature_group_85b748c9e4fbb02f41e4dd418566e5c7);
+        
+    
+            feature_group_85b748c9e4fbb02f41e4dd418566e5c7.addTo(map_f49de384d50beeddbb2e069c9695735b);
+        
+    
+            var feature_group_06afbe3689fe87f096939e634110ac07 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_4641ad4cad70a1c3637e2f5e4d615ea1 = L.marker(
+                [50.9145181475, 2.7427879295],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_c931f3a283a859c228630101b9804277 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_67057d1b4a4452b45252bc9a57314e9f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4b8c377110244f5189e39febea14e053 = $(`<div id="html_4b8c377110244f5189e39febea14e053" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8640<br><b>Restaurants delivering:</b> 1</div>`)[0];
+                popup_67057d1b4a4452b45252bc9a57314e9f.setContent(html_4b8c377110244f5189e39febea14e053);
+            
+        
+
+        marker_4641ad4cad70a1c3637e2f5e4d615ea1.bindPopup(popup_67057d1b4a4452b45252bc9a57314e9f)
+        ;
+
+        
+    
+    
+            marker_4641ad4cad70a1c3637e2f5e4d615ea1.bindTooltip(
+                `<div>
+                     8640 — 1 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4641ad4cad70a1c3637e2f5e4d615ea1.setIcon(icon_c931f3a283a859c228630101b9804277);
+            
+    
+            var marker_13ab4d9fa567299473017fdb60025652 = L.marker(
+                [50.96688798, 2.7664292246],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_ae1f0dbba6a20eb3b08f00e57a82b58d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cd1159a58a933177d9e5f9ce6c2b9fa5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_350b283e441c4071b9099723c4bd6122 = $(`<div id="html_350b283e441c4071b9099723c4bd6122" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8647<br><b>Restaurants delivering:</b> 1</div>`)[0];
+                popup_cd1159a58a933177d9e5f9ce6c2b9fa5.setContent(html_350b283e441c4071b9099723c4bd6122);
+            
+        
+
+        marker_13ab4d9fa567299473017fdb60025652.bindPopup(popup_cd1159a58a933177d9e5f9ce6c2b9fa5)
+        ;
+
+        
+    
+    
+            marker_13ab4d9fa567299473017fdb60025652.bindTooltip(
+                `<div>
+                     8647 — 1 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_13ab4d9fa567299473017fdb60025652.setIcon(icon_ae1f0dbba6a20eb3b08f00e57a82b58d);
+            
+    
+            var marker_b13b5b54c965da035d852330547dd63a = L.marker(
+                [50.9081012775, 2.64723057725],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_777aa2f2dc33984a46960e1ca1ac570a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8816ff510d4f851e39f2926a5e8a8ddb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5a1eb6fc26325b9795f2b2a056a23bac = $(`<div id="html_5a1eb6fc26325b9795f2b2a056a23bac" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8972<br><b>Restaurants delivering:</b> 1</div>`)[0];
+                popup_8816ff510d4f851e39f2926a5e8a8ddb.setContent(html_5a1eb6fc26325b9795f2b2a056a23bac);
+            
+        
+
+        marker_b13b5b54c965da035d852330547dd63a.bindPopup(popup_8816ff510d4f851e39f2926a5e8a8ddb)
+        ;
+
+        
+    
+    
+            marker_b13b5b54c965da035d852330547dd63a.bindTooltip(
+                `<div>
+                     8972 — 1 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b13b5b54c965da035d852330547dd63a.setIcon(icon_777aa2f2dc33984a46960e1ca1ac570a);
+            
+    
+            var marker_336cf90a63e924c583d278f1dbf663f1 = L.marker(
+                [50.859147115, 2.6424318755],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_e1418381aea2f79e9bf184db3468c871 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33d503871c2cd5cee2cd5476ab12c73d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0bd1556cdbe5ac6a4d34688647b17b06 = $(`<div id="html_0bd1556cdbe5ac6a4d34688647b17b06" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8978<br><b>Restaurants delivering:</b> 1</div>`)[0];
+                popup_33d503871c2cd5cee2cd5476ab12c73d.setContent(html_0bd1556cdbe5ac6a4d34688647b17b06);
+            
+        
+
+        marker_336cf90a63e924c583d278f1dbf663f1.bindPopup(popup_33d503871c2cd5cee2cd5476ab12c73d)
+        ;
+
+        
+    
+    
+            marker_336cf90a63e924c583d278f1dbf663f1.bindTooltip(
+                `<div>
+                     8978 — 1 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_336cf90a63e924c583d278f1dbf663f1.setIcon(icon_e1418381aea2f79e9bf184db3468c871);
+            
+    
+            var marker_b48ed102f6b3cff1f503f833aa9368cd = L.marker(
+                [51.281713315, 3.6084749235],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_b6322e9706b1f9f5cf355150d8c8bac2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a81ad35f10bf928124273d3c96a2b3bd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b5c8bf6f6dff8c38d60d311ea6c06bdb = $(`<div id="html_b5c8bf6f6dff8c38d60d311ea6c06bdb" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9988<br><b>Restaurants delivering:</b> 1</div>`)[0];
+                popup_a81ad35f10bf928124273d3c96a2b3bd.setContent(html_b5c8bf6f6dff8c38d60d311ea6c06bdb);
+            
+        
+
+        marker_b48ed102f6b3cff1f503f833aa9368cd.bindPopup(popup_a81ad35f10bf928124273d3c96a2b3bd)
+        ;
+
+        
+    
+    
+            marker_b48ed102f6b3cff1f503f833aa9368cd.bindTooltip(
+                `<div>
+                     9988 — 1 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b48ed102f6b3cff1f503f833aa9368cd.setIcon(icon_b6322e9706b1f9f5cf355150d8c8bac2);
+            
+    
+            var marker_6b0c7a343658d9af1f09bb1c6ede57a6 = L.marker(
+                [50.76635165, 2.783481455],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_7fe49ba96de968fce31236625ca6c3be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29039435e48a607c686c67c333f212d2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a2df9078f3334e08829c0e7e4ef10abb = $(`<div id="html_a2df9078f3334e08829c0e7e4ef10abb" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8951<br><b>Restaurants delivering:</b> 2</div>`)[0];
+                popup_29039435e48a607c686c67c333f212d2.setContent(html_a2df9078f3334e08829c0e7e4ef10abb);
+            
+        
+
+        marker_6b0c7a343658d9af1f09bb1c6ede57a6.bindPopup(popup_29039435e48a607c686c67c333f212d2)
+        ;
+
+        
+    
+    
+            marker_6b0c7a343658d9af1f09bb1c6ede57a6.bindTooltip(
+                `<div>
+                     8951 — 2 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6b0c7a343658d9af1f09bb1c6ede57a6.setIcon(icon_7fe49ba96de968fce31236625ca6c3be);
+            
+    
+            var marker_aadab76f98b0caaef39811879d94ace5 = L.marker(
+                [50.78126955, 2.774534546],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_bee0b44190e5e0e4d618d34a7a22800a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f9d934f5b123b72696724e50d714360 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_19d69e793bf7d1489b47a722e21aa5a9 = $(`<div id="html_19d69e793bf7d1489b47a722e21aa5a9" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8958<br><b>Restaurants delivering:</b> 2</div>`)[0];
+                popup_4f9d934f5b123b72696724e50d714360.setContent(html_19d69e793bf7d1489b47a722e21aa5a9);
+            
+        
+
+        marker_aadab76f98b0caaef39811879d94ace5.bindPopup(popup_4f9d934f5b123b72696724e50d714360)
+        ;
+
+        
+    
+    
+            marker_aadab76f98b0caaef39811879d94ace5.bindTooltip(
+                `<div>
+                     8958 — 2 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aadab76f98b0caaef39811879d94ace5.setIcon(icon_bee0b44190e5e0e4d618d34a7a22800a);
+            
+    
+            var marker_c07c4dfa5f6840497b671ccf986e6314 = L.marker(
+                [51.28232923, 3.54615128],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_7bd6ec12ffd715187676984a5d980c0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d13401130ef43dc70d34c869ded63556 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fdedadaa2472d088b0ddf1fae71179ca = $(`<div id="html_fdedadaa2472d088b0ddf1fae71179ca" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9981<br><b>Restaurants delivering:</b> 2</div>`)[0];
+                popup_d13401130ef43dc70d34c869ded63556.setContent(html_fdedadaa2472d088b0ddf1fae71179ca);
+            
+        
+
+        marker_c07c4dfa5f6840497b671ccf986e6314.bindPopup(popup_d13401130ef43dc70d34c869ded63556)
+        ;
+
+        
+    
+    
+            marker_c07c4dfa5f6840497b671ccf986e6314.bindTooltip(
+                `<div>
+                     9981 — 2 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c07c4dfa5f6840497b671ccf986e6314.setIcon(icon_7bd6ec12ffd715187676984a5d980c0e);
+            
+    
+            var marker_842dbf4b873283c24651ceff9c7a64a2 = L.marker(
+                [51.25697429, 3.5909368695],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_aff1af447b64fb7901768b3874d93967 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_437707556797aaf983aa23fa1da09c8d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a8d316dbc33016922792550c3b0fb449 = $(`<div id="html_a8d316dbc33016922792550c3b0fb449" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9982<br><b>Restaurants delivering:</b> 2</div>`)[0];
+                popup_437707556797aaf983aa23fa1da09c8d.setContent(html_a8d316dbc33016922792550c3b0fb449);
+            
+        
+
+        marker_842dbf4b873283c24651ceff9c7a64a2.bindPopup(popup_437707556797aaf983aa23fa1da09c8d)
+        ;
+
+        
+    
+    
+            marker_842dbf4b873283c24651ceff9c7a64a2.bindTooltip(
+                `<div>
+                     9982 — 2 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_842dbf4b873283c24651ceff9c7a64a2.setIcon(icon_aff1af447b64fb7901768b3874d93967);
+            
+    
+            var marker_14e5f8efef622729856c0108be270768 = L.marker(
+                [51.25599933, 3.415894183],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_d01f703908cb4138e1c64572b6ee6082 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_074caba0d5ded616bea4df50ec496146 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4416f82d938aabd08ddfb338c073d508 = $(`<div id="html_4416f82d938aabd08ddfb338c073d508" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9992<br><b>Restaurants delivering:</b> 2</div>`)[0];
+                popup_074caba0d5ded616bea4df50ec496146.setContent(html_4416f82d938aabd08ddfb338c073d508);
+            
+        
+
+        marker_14e5f8efef622729856c0108be270768.bindPopup(popup_074caba0d5ded616bea4df50ec496146)
+        ;
+
+        
+    
+    
+            marker_14e5f8efef622729856c0108be270768.bindTooltip(
+                `<div>
+                     9992 — 2 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_14e5f8efef622729856c0108be270768.setIcon(icon_d01f703908cb4138e1c64572b6ee6082);
+            
+    
+            var marker_2bcd29cef932e5e537c1324bc27eafe6 = L.marker(
+                [51.487513299999996, 4.782082962],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_3aaa945690bdbe3a3c1d888c6bc0908a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b4ebf2ea0b7ed23a8b2c8d59c49c0df = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f8f63d60591a5b9e05413318b303a9e3 = $(`<div id="html_f8f63d60591a5b9e05413318b303a9e3" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 2328<br><b>Restaurants delivering:</b> 3</div>`)[0];
+                popup_5b4ebf2ea0b7ed23a8b2c8d59c49c0df.setContent(html_f8f63d60591a5b9e05413318b303a9e3);
+            
+        
+
+        marker_2bcd29cef932e5e537c1324bc27eafe6.bindPopup(popup_5b4ebf2ea0b7ed23a8b2c8d59c49c0df)
+        ;
+
+        
+    
+    
+            marker_2bcd29cef932e5e537c1324bc27eafe6.bindTooltip(
+                `<div>
+                     2328 — 3 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2bcd29cef932e5e537c1324bc27eafe6.setIcon(icon_3aaa945690bdbe3a3c1d888c6bc0908a);
+            
+    
+            var marker_da7067d98b4727acbd70c2b477c0746f = L.marker(
+                [50.97088273375, 2.895798584625],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_2c8a57fc1a713a488cfc3843f2b6d735 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ed94b5be8c906c0655d4020c794118e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_febffebdb5143d33563857a11f61e25a = $(`<div id="html_febffebdb5143d33563857a11f61e25a" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8650<br><b>Restaurants delivering:</b> 3</div>`)[0];
+                popup_7ed94b5be8c906c0655d4020c794118e.setContent(html_febffebdb5143d33563857a11f61e25a);
+            
+        
+
+        marker_da7067d98b4727acbd70c2b477c0746f.bindPopup(popup_7ed94b5be8c906c0655d4020c794118e)
+        ;
+
+        
+    
+    
+            marker_da7067d98b4727acbd70c2b477c0746f.bindTooltip(
+                `<div>
+                     8650 — 3 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_da7067d98b4727acbd70c2b477c0746f.setIcon(icon_2c8a57fc1a713a488cfc3843f2b6d735);
+            
+    
+            var marker_db9d8a1037c7b6a618bfb2ff9146b8e3 = L.marker(
+                [50.74581163, 2.826595381],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_ec925a84d613506964d4a294f74c94ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f82783e055866c0ef596c81f41f056a2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0df103f8ab01743a8b273a346c47c5a7 = $(`<div id="html_0df103f8ab01743a8b273a346c47c5a7" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8950<br><b>Restaurants delivering:</b> 3</div>`)[0];
+                popup_f82783e055866c0ef596c81f41f056a2.setContent(html_0df103f8ab01743a8b273a346c47c5a7);
+            
+        
+
+        marker_db9d8a1037c7b6a618bfb2ff9146b8e3.bindPopup(popup_f82783e055866c0ef596c81f41f056a2)
+        ;
+
+        
+    
+    
+            marker_db9d8a1037c7b6a618bfb2ff9146b8e3.bindTooltip(
+                `<div>
+                     8950 — 3 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_db9d8a1037c7b6a618bfb2ff9146b8e3.setIcon(icon_ec925a84d613506964d4a294f74c94ba);
+            
+    
+            var marker_5e0a56c714c0a4eeb3823fac7c3b8662 = L.marker(
+                [50.836412685, 3.6925644275],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_c10887f1e40f3d8c735efbcfa2eb84df = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f974f60050a0ad4609d2dbd02e46ad78 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1ab594a93766785ad05a9f9f10258745 = $(`<div id="html_1ab594a93766785ad05a9f9f10258745" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9667<br><b>Restaurants delivering:</b> 3</div>`)[0];
+                popup_f974f60050a0ad4609d2dbd02e46ad78.setContent(html_1ab594a93766785ad05a9f9f10258745);
+            
+        
+
+        marker_5e0a56c714c0a4eeb3823fac7c3b8662.bindPopup(popup_f974f60050a0ad4609d2dbd02e46ad78)
+        ;
+
+        
+    
+    
+            marker_5e0a56c714c0a4eeb3823fac7c3b8662.bindTooltip(
+                `<div>
+                     9667 — 3 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5e0a56c714c0a4eeb3823fac7c3b8662.setIcon(icon_c10887f1e40f3d8c735efbcfa2eb84df);
+            
+    
+            var marker_57c249fe8eb7ce3dbec563006975347a = L.marker(
+                [50.89693897, 4.9125709795],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_e3874f2d48dc2c7a2a8744c15ab7fa30 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_62e8937850e420ab2a18518f45543c15 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2d737d00ba1e9f3d4a57506c0ab70199 = $(`<div id="html_2d737d00ba1e9f3d4a57506c0ab70199" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3391<br><b>Restaurants delivering:</b> 4</div>`)[0];
+                popup_62e8937850e420ab2a18518f45543c15.setContent(html_2d737d00ba1e9f3d4a57506c0ab70199);
+            
+        
+
+        marker_57c249fe8eb7ce3dbec563006975347a.bindPopup(popup_62e8937850e420ab2a18518f45543c15)
+        ;
+
+        
+    
+    
+            marker_57c249fe8eb7ce3dbec563006975347a.bindTooltip(
+                `<div>
+                     3391 — 4 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_57c249fe8eb7ce3dbec563006975347a.setIcon(icon_e3874f2d48dc2c7a2a8744c15ab7fa30);
+            
+    
+            var marker_21dcf063f3d11f255cdcd01143af99f2 = L.marker(
+                [50.918146433333334, 4.953562318666667],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_58be601361ddb76e225eef89915ce553 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_660f4511d465d3dae7295d4fe37e1b09 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_afef79b7742495a26e6702f503872514 = $(`<div id="html_afef79b7742495a26e6702f503872514" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3461<br><b>Restaurants delivering:</b> 4</div>`)[0];
+                popup_660f4511d465d3dae7295d4fe37e1b09.setContent(html_afef79b7742495a26e6702f503872514);
+            
+        
+
+        marker_21dcf063f3d11f255cdcd01143af99f2.bindPopup(popup_660f4511d465d3dae7295d4fe37e1b09)
+        ;
+
+        
+    
+    
+            marker_21dcf063f3d11f255cdcd01143af99f2.bindTooltip(
+                `<div>
+                     3461 — 4 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_21dcf063f3d11f255cdcd01143af99f2.setIcon(icon_58be601361ddb76e225eef89915ce553);
+            
+    
+            var marker_90e24aa8ca402f9377738ba6b9e0cf46 = L.marker(
+                [50.73117828, 5.880955598],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_a410e1ff10f77d263731ae7097227204 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bfc161641c855ba48c74b7acb196839b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0b98d9fdc3e8712ca6fe32399a16d0ae = $(`<div id="html_0b98d9fdc3e8712ca6fe32399a16d0ae" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3791<br><b>Restaurants delivering:</b> 4</div>`)[0];
+                popup_bfc161641c855ba48c74b7acb196839b.setContent(html_0b98d9fdc3e8712ca6fe32399a16d0ae);
+            
+        
+
+        marker_90e24aa8ca402f9377738ba6b9e0cf46.bindPopup(popup_bfc161641c855ba48c74b7acb196839b)
+        ;
+
+        
+    
+    
+            marker_90e24aa8ca402f9377738ba6b9e0cf46.bindTooltip(
+                `<div>
+                     3791 — 4 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_90e24aa8ca402f9377738ba6b9e0cf46.setIcon(icon_a410e1ff10f77d263731ae7097227204);
+            
+    
+            var marker_4436f14b86ff59fbfa0b3832bf1ab015 = L.marker(
+                [50.75208255, 5.862045331],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_c089a49b96750371f147ed3e2f289ddd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ed579082d1efb0e5c59868c8f7bb798 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_26518eb83430d5ea5bc1c0dfca84b4b2 = $(`<div id="html_26518eb83430d5ea5bc1c0dfca84b4b2" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3793<br><b>Restaurants delivering:</b> 4</div>`)[0];
+                popup_5ed579082d1efb0e5c59868c8f7bb798.setContent(html_26518eb83430d5ea5bc1c0dfca84b4b2);
+            
+        
+
+        marker_4436f14b86ff59fbfa0b3832bf1ab015.bindPopup(popup_5ed579082d1efb0e5c59868c8f7bb798)
+        ;
+
+        
+    
+    
+            marker_4436f14b86ff59fbfa0b3832bf1ab015.bindTooltip(
+                `<div>
+                     3793 — 4 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4436f14b86ff59fbfa0b3832bf1ab015.setIcon(icon_c089a49b96750371f147ed3e2f289ddd);
+            
+    
+            var marker_27f690366c846b02f5cec542eebf8374 = L.marker(
+                [50.79881717000001, 2.772978307],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_2cb8396793404909f31652f06f11d18d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54cb8aea56887d7fd1a3cfaec9e36eb3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4d4055605b160cb1c92615dec36c8f38 = $(`<div id="html_4d4055605b160cb1c92615dec36c8f38" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8954<br><b>Restaurants delivering:</b> 4</div>`)[0];
+                popup_54cb8aea56887d7fd1a3cfaec9e36eb3.setContent(html_4d4055605b160cb1c92615dec36c8f38);
+            
+        
+
+        marker_27f690366c846b02f5cec542eebf8374.bindPopup(popup_54cb8aea56887d7fd1a3cfaec9e36eb3)
+        ;
+
+        
+    
+    
+            marker_27f690366c846b02f5cec542eebf8374.bindTooltip(
+                `<div>
+                     8954 — 4 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_27f690366c846b02f5cec542eebf8374.setIcon(icon_2cb8396793404909f31652f06f11d18d);
+            
+    
+            var marker_c00003a852c75234bc3de3c604bacf20 = L.marker(
+                [50.76407732, 2.899200394],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_6ad3f2ef7800ed6e01b543a49fb23a77 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_58196286de210316d7cdac9d70d3a353 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_eeec710743bc297cf2e558cdf60f38e5 = $(`<div id="html_eeec710743bc297cf2e558cdf60f38e5" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8957<br><b>Restaurants delivering:</b> 4</div>`)[0];
+                popup_58196286de210316d7cdac9d70d3a353.setContent(html_eeec710743bc297cf2e558cdf60f38e5);
+            
+        
+
+        marker_c00003a852c75234bc3de3c604bacf20.bindPopup(popup_58196286de210316d7cdac9d70d3a353)
+        ;
+
+        
+    
+    
+            marker_c00003a852c75234bc3de3c604bacf20.bindTooltip(
+                `<div>
+                     8957 — 4 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c00003a852c75234bc3de3c604bacf20.setIcon(icon_6ad3f2ef7800ed6e01b543a49fb23a77);
+            
+    
+            var marker_b55ee13e20ec530f15e86cdbb33111b7 = L.marker(
+                [50.891057525, 5.0033775145],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_f8ee1c33d2a352adb6b68b352f5e36c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be228a973f7c71a07804e0d6d055068e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_689f2224dc394178ad57cfd6f52e6828 = $(`<div id="html_689f2224dc394178ad57cfd6f52e6828" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3472<br><b>Restaurants delivering:</b> 5</div>`)[0];
+                popup_be228a973f7c71a07804e0d6d055068e.setContent(html_689f2224dc394178ad57cfd6f52e6828);
+            
+        
+
+        marker_b55ee13e20ec530f15e86cdbb33111b7.bindPopup(popup_be228a973f7c71a07804e0d6d055068e)
+        ;
+
+        
+    
+    
+            marker_b55ee13e20ec530f15e86cdbb33111b7.bindTooltip(
+                `<div>
+                     3472 — 5 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b55ee13e20ec530f15e86cdbb33111b7.setIcon(icon_f8ee1c33d2a352adb6b68b352f5e36c2);
+            
+    
+            var marker_3eedd70e0651136eec74e5e2e9a0d5d0 = L.marker(
+                [50.91645995, 5.004291699],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_2b74bcd35885ab8ce9cb75a6de3102ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb7003b7fb4a71ebd4f2ff7af6634d35 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a42588a4354d6c38c90004783ebb9f7b = $(`<div id="html_a42588a4354d6c38c90004783ebb9f7b" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3473<br><b>Restaurants delivering:</b> 5</div>`)[0];
+                popup_fb7003b7fb4a71ebd4f2ff7af6634d35.setContent(html_a42588a4354d6c38c90004783ebb9f7b);
+            
+        
+
+        marker_3eedd70e0651136eec74e5e2e9a0d5d0.bindPopup(popup_fb7003b7fb4a71ebd4f2ff7af6634d35)
+        ;
+
+        
+    
+    
+            marker_3eedd70e0651136eec74e5e2e9a0d5d0.bindTooltip(
+                `<div>
+                     3473 — 5 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3eedd70e0651136eec74e5e2e9a0d5d0.setIcon(icon_2b74bcd35885ab8ce9cb75a6de3102ed);
+            
+    
+            var marker_9db64cf9c2acf765a9ec95861ff63454 = L.marker(
+                [50.7477335, 3.408196394],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_5996a1e8565f8f50aabef05a625150a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4328a19421fd1602e1f94a401f5e0db6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_37bed87654035e24692d29f9b350a862 = $(`<div id="html_37bed87654035e24692d29f9b350a862" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8583<br><b>Restaurants delivering:</b> 5</div>`)[0];
+                popup_4328a19421fd1602e1f94a401f5e0db6.setContent(html_37bed87654035e24692d29f9b350a862);
+            
+        
+
+        marker_9db64cf9c2acf765a9ec95861ff63454.bindPopup(popup_4328a19421fd1602e1f94a401f5e0db6)
+        ;
+
+        
+    
+    
+            marker_9db64cf9c2acf765a9ec95861ff63454.bindTooltip(
+                `<div>
+                     8583 — 5 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9db64cf9c2acf765a9ec95861ff63454.setIcon(icon_5996a1e8565f8f50aabef05a625150a1);
+            
+    
+            var marker_d5935568ffd60beff7142682f191ce48 = L.marker(
+                [51.03923486714286, 2.8542746270476194],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_f88fa635e95167ca22efc6c9a8a38901 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_13a25edd90ab98c67a9ae8dcff06ae8e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_da67593e4e164101a43e7becffbdddfc = $(`<div id="html_da67593e4e164101a43e7becffbdddfc" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8600<br><b>Restaurants delivering:</b> 5</div>`)[0];
+                popup_13a25edd90ab98c67a9ae8dcff06ae8e.setContent(html_da67593e4e164101a43e7becffbdddfc);
+            
+        
+
+        marker_d5935568ffd60beff7142682f191ce48.bindPopup(popup_13a25edd90ab98c67a9ae8dcff06ae8e)
+        ;
+
+        
+    
+    
+            marker_d5935568ffd60beff7142682f191ce48.bindTooltip(
+                `<div>
+                     8600 — 5 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d5935568ffd60beff7142682f191ce48.setIcon(icon_f88fa635e95167ca22efc6c9a8a38901);
+            
+    
+            var marker_58bdd80f52f9ecf7eecb6c8935ec1323 = L.marker(
+                [50.75980762, 2.85446648],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_9992f3998ee33414b7c7a16244f2577b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c16ec80b21f01770004cf61d669d654 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5987347016006a14f8309ee9c943c94d = $(`<div id="html_5987347016006a14f8309ee9c943c94d" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8952<br><b>Restaurants delivering:</b> 5</div>`)[0];
+                popup_6c16ec80b21f01770004cf61d669d654.setContent(html_5987347016006a14f8309ee9c943c94d);
+            
+        
+
+        marker_58bdd80f52f9ecf7eecb6c8935ec1323.bindPopup(popup_6c16ec80b21f01770004cf61d669d654)
+        ;
+
+        
+    
+    
+            marker_58bdd80f52f9ecf7eecb6c8935ec1323.bindTooltip(
+                `<div>
+                     8952 — 5 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_58bdd80f52f9ecf7eecb6c8935ec1323.setIcon(icon_9992f3998ee33414b7c7a16244f2577b);
+            
+    
+            var marker_9b9d89e45fd0ea1d8c237d15c696dc74 = L.marker(
+                [50.88598484, 3.685536349],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_76cb3d2c4342d0dbf4a4e7ed59e895ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9eec729b86c639234ab3e00fef53bbd4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b635d307f6f0e1a840942c490f8e0337 = $(`<div id="html_b635d307f6f0e1a840942c490f8e0337" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9636<br><b>Restaurants delivering:</b> 5</div>`)[0];
+                popup_9eec729b86c639234ab3e00fef53bbd4.setContent(html_b635d307f6f0e1a840942c490f8e0337);
+            
+        
+
+        marker_9b9d89e45fd0ea1d8c237d15c696dc74.bindPopup(popup_9eec729b86c639234ab3e00fef53bbd4)
+        ;
+
+        
+    
+    
+            marker_9b9d89e45fd0ea1d8c237d15c696dc74.bindTooltip(
+                `<div>
+                     9636 — 5 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9b9d89e45fd0ea1d8c237d15c696dc74.setIcon(icon_76cb3d2c4342d0dbf4a4e7ed59e895ba);
+            
+    
+            var marker_5fb64767c2bfe0a82a56e3d9cd41f9ca = L.marker(
+                [50.7895786, 3.678213941],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_7ce04d158c4214ff06c67b819a44fa39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6c2cec57b583742dbb24809e3bb3995 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f0d75c8535fb2feebfefe56931e212eb = $(`<div id="html_f0d75c8535fb2feebfefe56931e212eb" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9688<br><b>Restaurants delivering:</b> 5</div>`)[0];
+                popup_f6c2cec57b583742dbb24809e3bb3995.setContent(html_f0d75c8535fb2feebfefe56931e212eb);
+            
+        
+
+        marker_5fb64767c2bfe0a82a56e3d9cd41f9ca.bindPopup(popup_f6c2cec57b583742dbb24809e3bb3995)
+        ;
+
+        
+    
+    
+            marker_5fb64767c2bfe0a82a56e3d9cd41f9ca.bindTooltip(
+                `<div>
+                     9688 — 5 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5fb64767c2bfe0a82a56e3d9cd41f9ca.setIcon(icon_7ce04d158c4214ff06c67b819a44fa39);
+            
+    
+            var marker_e624046c0901b80ac4a1a4cd87497eb9 = L.marker(
+                [51.08792214, 3.491082041],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_d5a0e4fe4796e25234afa37520d9230f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b058e21baeacc844c3eb97e4c0b0df4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_179762af45e2749875846ed0444cfc50 = $(`<div id="html_179762af45e2749875846ed0444cfc50" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9881<br><b>Restaurants delivering:</b> 5</div>`)[0];
+                popup_7b058e21baeacc844c3eb97e4c0b0df4.setContent(html_179762af45e2749875846ed0444cfc50);
+            
+        
+
+        marker_e624046c0901b80ac4a1a4cd87497eb9.bindPopup(popup_7b058e21baeacc844c3eb97e4c0b0df4)
+        ;
+
+        
+    
+    
+            marker_e624046c0901b80ac4a1a4cd87497eb9.bindTooltip(
+                `<div>
+                     9881 — 5 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e624046c0901b80ac4a1a4cd87497eb9.setIcon(icon_d5a0e4fe4796e25234afa37520d9230f);
+            
+    
+            var marker_c90a90fe493189a9f42b2e993e62abcf = L.marker(
+                [51.41745351, 4.762637041],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_51b6513375449fad266a3ae528d80dbb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b708d3bf428a23d2601c42c91dd71f6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2ee288ba8e12d146d964ca3c0b93d661 = $(`<div id="html_2ee288ba8e12d146d964ca3c0b93d661" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 2322<br><b>Restaurants delivering:</b> 6</div>`)[0];
+                popup_0b708d3bf428a23d2601c42c91dd71f6.setContent(html_2ee288ba8e12d146d964ca3c0b93d661);
+            
+        
+
+        marker_c90a90fe493189a9f42b2e993e62abcf.bindPopup(popup_0b708d3bf428a23d2601c42c91dd71f6)
+        ;
+
+        
+    
+    
+            marker_c90a90fe493189a9f42b2e993e62abcf.bindTooltip(
+                `<div>
+                     2322 — 6 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c90a90fe493189a9f42b2e993e62abcf.setIcon(icon_51b6513375449fad266a3ae528d80dbb);
+            
+    
+            var marker_0fbd2aedd5faf2bb4cbe696b9c5bf873 = L.marker(
+                [51.44597584, 5.038920218],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_81e7e06ed7be61d5c4a52b13b623287e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd70475ec47023621b533580abdb3ac2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_38bfb16590061eec93acdb74f03952bf = $(`<div id="html_38bfb16590061eec93acdb74f03952bf" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 2382<br><b>Restaurants delivering:</b> 6</div>`)[0];
+                popup_bd70475ec47023621b533580abdb3ac2.setContent(html_38bfb16590061eec93acdb74f03952bf);
+            
+        
+
+        marker_0fbd2aedd5faf2bb4cbe696b9c5bf873.bindPopup(popup_bd70475ec47023621b533580abdb3ac2)
+        ;
+
+        
+    
+    
+            marker_0fbd2aedd5faf2bb4cbe696b9c5bf873.bindTooltip(
+                `<div>
+                     2382 — 6 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0fbd2aedd5faf2bb4cbe696b9c5bf873.setIcon(icon_81e7e06ed7be61d5c4a52b13b623287e);
+            
+    
+            var marker_1e20db814c96a94c5883011ca6c17bb5 = L.marker(
+                [50.88721628, 4.957217883],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_dfbc668e8198ad7b5f1c26d0be585b29 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1a0b2463fba6c044d8e86e6a849017cd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_924bd5152e1ce1d70b1ac3a21cf89932 = $(`<div id="html_924bd5152e1ce1d70b1ac3a21cf89932" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3381<br><b>Restaurants delivering:</b> 6</div>`)[0];
+                popup_1a0b2463fba6c044d8e86e6a849017cd.setContent(html_924bd5152e1ce1d70b1ac3a21cf89932);
+            
+        
+
+        marker_1e20db814c96a94c5883011ca6c17bb5.bindPopup(popup_1a0b2463fba6c044d8e86e6a849017cd)
+        ;
+
+        
+    
+    
+            marker_1e20db814c96a94c5883011ca6c17bb5.bindTooltip(
+                `<div>
+                     3381 — 6 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1e20db814c96a94c5883011ca6c17bb5.setIcon(icon_dfbc668e8198ad7b5f1c26d0be585b29);
+            
+    
+            var marker_0351270ce7225e76fad5eee47ae45720 = L.marker(
+                [50.73746324, 5.82339545],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_2cf3e6f3878afe1800532389fe8938cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c622bb3dd1e7365c5551c59f8d90f87 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c00e6a415044563e44867912dd9af00b = $(`<div id="html_c00e6a415044563e44867912dd9af00b" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3792<br><b>Restaurants delivering:</b> 6</div>`)[0];
+                popup_3c622bb3dd1e7365c5551c59f8d90f87.setContent(html_c00e6a415044563e44867912dd9af00b);
+            
+        
+
+        marker_0351270ce7225e76fad5eee47ae45720.bindPopup(popup_3c622bb3dd1e7365c5551c59f8d90f87)
+        ;
+
+        
+    
+    
+            marker_0351270ce7225e76fad5eee47ae45720.bindTooltip(
+                `<div>
+                     3792 — 6 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0351270ce7225e76fad5eee47ae45720.setIcon(icon_2cf3e6f3878afe1800532389fe8938cc);
+            
+    
+            var marker_648e7832c1c5b3454db31a6add45b267 = L.marker(
+                [51.121141865, 3.02908714375],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_635d67ecb20ea22ea54642bd5c911643 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4e453336d7d19e436eb57a16da2ac345 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_73e5997eea668f65c8ea57ebd44a69c9 = $(`<div id="html_73e5997eea668f65c8ea57ebd44a69c9" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8480<br><b>Restaurants delivering:</b> 6</div>`)[0];
+                popup_4e453336d7d19e436eb57a16da2ac345.setContent(html_73e5997eea668f65c8ea57ebd44a69c9);
+            
+        
+
+        marker_648e7832c1c5b3454db31a6add45b267.bindPopup(popup_4e453336d7d19e436eb57a16da2ac345)
+        ;
+
+        
+    
+    
+            marker_648e7832c1c5b3454db31a6add45b267.bindTooltip(
+                `<div>
+                     8480 — 6 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_648e7832c1c5b3454db31a6add45b267.setIcon(icon_635d67ecb20ea22ea54642bd5c911643);
+            
+    
+            var marker_a9dd82f27384ae62cf11c086e14ad591 = L.marker(
+                [51.25769912, 3.717790937],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_0062fc42d3e7b7f0ca8dffcf1230c577 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_14bef07551257a34e29b0b56955a3d80 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d63d4da664c8d2ae9858fac95fb93cdd = $(`<div id="html_d63d4da664c8d2ae9858fac95fb93cdd" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9961<br><b>Restaurants delivering:</b> 6</div>`)[0];
+                popup_14bef07551257a34e29b0b56955a3d80.setContent(html_d63d4da664c8d2ae9858fac95fb93cdd);
+            
+        
+
+        marker_a9dd82f27384ae62cf11c086e14ad591.bindPopup(popup_14bef07551257a34e29b0b56955a3d80)
+        ;
+
+        
+    
+    
+            marker_a9dd82f27384ae62cf11c086e14ad591.bindTooltip(
+                `<div>
+                     9961 — 6 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a9dd82f27384ae62cf11c086e14ad591.setIcon(icon_0062fc42d3e7b7f0ca8dffcf1230c577);
+            
+    
+            var marker_0ece4e23c6278c7da21582280e7222ab = L.marker(
+                [51.44288647, 4.736652953],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_7e3761c407a64ef8fc5c554af8aa7ace = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3840e7fb89bf2762380b244e1def1537 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2b5c02dee4ab2b4dfdc4514a17bb6ce6 = $(`<div id="html_2b5c02dee4ab2b4dfdc4514a17bb6ce6" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 2321<br><b>Restaurants delivering:</b> 7</div>`)[0];
+                popup_3840e7fb89bf2762380b244e1def1537.setContent(html_2b5c02dee4ab2b4dfdc4514a17bb6ce6);
+            
+        
+
+        marker_0ece4e23c6278c7da21582280e7222ab.bindPopup(popup_3840e7fb89bf2762380b244e1def1537)
+        ;
+
+        
+    
+    
+            marker_0ece4e23c6278c7da21582280e7222ab.bindTooltip(
+                `<div>
+                     2321 — 7 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0ece4e23c6278c7da21582280e7222ab.setIcon(icon_7e3761c407a64ef8fc5c554af8aa7ace);
+            
+    
+            var marker_dbf4513216b56e4c2c82f58f8d551a60 = L.marker(
+                [51.42474659, 4.912343728],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_5d91432641c7f4e1e7b8ea3da708169f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e1f5a249976e45aea0b0b80e30ca3d67 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_532831c6f331a3b8466dbf1504fcd85d = $(`<div id="html_532831c6f331a3b8466dbf1504fcd85d" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 2387<br><b>Restaurants delivering:</b> 7</div>`)[0];
+                popup_e1f5a249976e45aea0b0b80e30ca3d67.setContent(html_532831c6f331a3b8466dbf1504fcd85d);
+            
+        
+
+        marker_dbf4513216b56e4c2c82f58f8d551a60.bindPopup(popup_e1f5a249976e45aea0b0b80e30ca3d67)
+        ;
+
+        
+    
+    
+            marker_dbf4513216b56e4c2c82f58f8d551a60.bindTooltip(
+                `<div>
+                     2387 — 7 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dbf4513216b56e4c2c82f58f8d551a60.setIcon(icon_5d91432641c7f4e1e7b8ea3da708169f);
+            
+    
+            var marker_14473e35af554fae13bf1c90cde5c826 = L.marker(
+                [50.80341856, 4.652954124],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_0e598aee1b8630317a3b763000fb8ec4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be59cf43c19f93399274ecd4a8631eb2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8198cbd048bdd7ba5bb82a384c18f892 = $(`<div id="html_8198cbd048bdd7ba5bb82a384c18f892" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3051<br><b>Restaurants delivering:</b> 7</div>`)[0];
+                popup_be59cf43c19f93399274ecd4a8631eb2.setContent(html_8198cbd048bdd7ba5bb82a384c18f892);
+            
+        
+
+        marker_14473e35af554fae13bf1c90cde5c826.bindPopup(popup_be59cf43c19f93399274ecd4a8631eb2)
+        ;
+
+        
+    
+    
+            marker_14473e35af554fae13bf1c90cde5c826.bindTooltip(
+                `<div>
+                     3051 — 7 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_14473e35af554fae13bf1c90cde5c826.setIcon(icon_0e598aee1b8630317a3b763000fb8ec4);
+            
+    
+            var marker_2352e1f98b90844f570aefb039d1bb3c = L.marker(
+                [50.76833102, 3.397871723],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_5af1011c139b98df6fb945225b4cb1c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c6045872bc95a68eb6a300d5150a283 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f0bb31070c9620116cc8743f1a27fecd = $(`<div id="html_f0bb31070c9620116cc8743f1a27fecd" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8552<br><b>Restaurants delivering:</b> 7</div>`)[0];
+                popup_5c6045872bc95a68eb6a300d5150a283.setContent(html_f0bb31070c9620116cc8743f1a27fecd);
+            
+        
+
+        marker_2352e1f98b90844f570aefb039d1bb3c.bindPopup(popup_5c6045872bc95a68eb6a300d5150a283)
+        ;
+
+        
+    
+    
+            marker_2352e1f98b90844f570aefb039d1bb3c.bindTooltip(
+                `<div>
+                     8552 — 7 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2352e1f98b90844f570aefb039d1bb3c.setIcon(icon_5af1011c139b98df6fb945225b4cb1c4);
+            
+    
+            var marker_b3b6536ebbf2eb1a8eba0eb6760ff6ee = L.marker(
+                [50.75524542, 3.430056111],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_b67e5e174566104cc6c42d8257a5140f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8a07add9580395f27d431e890baaf481 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ed1612db87e58d41dfe2583ad67b44ac = $(`<div id="html_ed1612db87e58d41dfe2583ad67b44ac" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8582<br><b>Restaurants delivering:</b> 7</div>`)[0];
+                popup_8a07add9580395f27d431e890baaf481.setContent(html_ed1612db87e58d41dfe2583ad67b44ac);
+            
+        
+
+        marker_b3b6536ebbf2eb1a8eba0eb6760ff6ee.bindPopup(popup_8a07add9580395f27d431e890baaf481)
+        ;
+
+        
+    
+    
+            marker_b3b6536ebbf2eb1a8eba0eb6760ff6ee.bindTooltip(
+                `<div>
+                     8582 — 7 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b3b6536ebbf2eb1a8eba0eb6760ff6ee.setIcon(icon_b67e5e174566104cc6c42d8257a5140f);
+            
+    
+            var marker_bf12a5e2e163f9ba58ee4ce6f7683b68 = L.marker(
+                [51.05613092642857, 2.6751743162142856],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_8a4eed5cc67f649347998cf063793ed9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fbdb99b6b17eace31bfc977d4eb73d9d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1729d905fd10836a64ad5fe3cc487a7e = $(`<div id="html_1729d905fd10836a64ad5fe3cc487a7e" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8630<br><b>Restaurants delivering:</b> 7</div>`)[0];
+                popup_fbdb99b6b17eace31bfc977d4eb73d9d.setContent(html_1729d905fd10836a64ad5fe3cc487a7e);
+            
+        
+
+        marker_bf12a5e2e163f9ba58ee4ce6f7683b68.bindPopup(popup_fbdb99b6b17eace31bfc977d4eb73d9d)
+        ;
+
+        
+    
+    
+            marker_bf12a5e2e163f9ba58ee4ce6f7683b68.bindTooltip(
+                `<div>
+                     8630 — 7 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bf12a5e2e163f9ba58ee4ce6f7683b68.setIcon(icon_8a4eed5cc67f649347998cf063793ed9);
+            
+    
+            var marker_fd2a742fcf8140af8c57c394d1fe7578 = L.marker(
+                [51.087458285, 2.951742949],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_1c6e6c2286ff95d4d39b050167da7527 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_339c78760ad8dd6a9e44eb36b333bf42 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d3db75c9d27492063dabd5b3f4068fa9 = $(`<div id="html_d3db75c9d27492063dabd5b3f4068fa9" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8680<br><b>Restaurants delivering:</b> 7</div>`)[0];
+                popup_339c78760ad8dd6a9e44eb36b333bf42.setContent(html_d3db75c9d27492063dabd5b3f4068fa9);
+            
+        
+
+        marker_fd2a742fcf8140af8c57c394d1fe7578.bindPopup(popup_339c78760ad8dd6a9e44eb36b333bf42)
+        ;
+
+        
+    
+    
+            marker_fd2a742fcf8140af8c57c394d1fe7578.bindTooltip(
+                `<div>
+                     8680 — 7 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fd2a742fcf8140af8c57c394d1fe7578.setIcon(icon_1c6e6c2286ff95d4d39b050167da7527);
+            
+    
+            var marker_fc3d05912f39f8c5e803bbd3ba18d5d2 = L.marker(
+                [50.78383886, 2.826284652],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_c25902646e8fd7c0716156daf5e3ef47 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d416ac50aac73f25a9725a7d44d62754 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_95a1f95e34f80ae4a67fdff98ace9dd8 = $(`<div id="html_95a1f95e34f80ae4a67fdff98ace9dd8" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8956<br><b>Restaurants delivering:</b> 7</div>`)[0];
+                popup_d416ac50aac73f25a9725a7d44d62754.setContent(html_95a1f95e34f80ae4a67fdff98ace9dd8);
+            
+        
+
+        marker_fc3d05912f39f8c5e803bbd3ba18d5d2.bindPopup(popup_d416ac50aac73f25a9725a7d44d62754)
+        ;
+
+        
+    
+    
+            marker_fc3d05912f39f8c5e803bbd3ba18d5d2.bindTooltip(
+                `<div>
+                     8956 — 7 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fc3d05912f39f8c5e803bbd3ba18d5d2.setIcon(icon_c25902646e8fd7c0716156daf5e3ef47);
+            
+    
+            var marker_60d6ca4c4f0235be9bbe2aa0fe2fb046 = L.marker(
+                [50.79724845, 3.59520242],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_3c4d71648574b469d30e9defb3e2f250 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05a5217aca97efac3283d6ba6bf1570d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b93e7c27af40fac6e0504803838df695 = $(`<div id="html_b93e7c27af40fac6e0504803838df695" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9681<br><b>Restaurants delivering:</b> 7</div>`)[0];
+                popup_05a5217aca97efac3283d6ba6bf1570d.setContent(html_b93e7c27af40fac6e0504803838df695);
+            
+        
+
+        marker_60d6ca4c4f0235be9bbe2aa0fe2fb046.bindPopup(popup_05a5217aca97efac3283d6ba6bf1570d)
+        ;
+
+        
+    
+    
+            marker_60d6ca4c4f0235be9bbe2aa0fe2fb046.bindTooltip(
+                `<div>
+                     9681 — 7 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_60d6ca4c4f0235be9bbe2aa0fe2fb046.setIcon(icon_3c4d71648574b469d30e9defb3e2f250);
+            
+    
+            var marker_61db1dda59f02daed262fe6df29c311e = L.marker(
+                [50.77141259, 4.832226471],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_35abc49972fd899401bf2f9c5ef28e86 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0387e0819f48f0a3d01d502d6652c8aa = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_53ee1039285494a70409a12c0fc6d2f0 = $(`<div id="html_53ee1039285494a70409a12c0fc6d2f0" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 1320<br><b>Restaurants delivering:</b> 8</div>`)[0];
+                popup_0387e0819f48f0a3d01d502d6652c8aa.setContent(html_53ee1039285494a70409a12c0fc6d2f0);
+            
+        
+
+        marker_61db1dda59f02daed262fe6df29c311e.bindPopup(popup_0387e0819f48f0a3d01d502d6652c8aa)
+        ;
+
+        
+    
+    
+            marker_61db1dda59f02daed262fe6df29c311e.bindTooltip(
+                `<div>
+                     1320 — 8 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_61db1dda59f02daed262fe6df29c311e.setIcon(icon_35abc49972fd899401bf2f9c5ef28e86);
+            
+    
+            var marker_711519204a5a369e64a8a544c7b87d1c = L.marker(
+                [50.76612073, 4.919626477],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_56aa256c9f87e716adf1db03a24d188e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a842c745bd2e119b20ff2f1a4457a00f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_82f6e47ee59741abc78c3accbbf827a0 = $(`<div id="html_82f6e47ee59741abc78c3accbbf827a0" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3321<br><b>Restaurants delivering:</b> 8</div>`)[0];
+                popup_a842c745bd2e119b20ff2f1a4457a00f.setContent(html_82f6e47ee59741abc78c3accbbf827a0);
+            
+        
+
+        marker_711519204a5a369e64a8a544c7b87d1c.bindPopup(popup_a842c745bd2e119b20ff2f1a4457a00f)
+        ;
+
+        
+    
+    
+            marker_711519204a5a369e64a8a544c7b87d1c.bindTooltip(
+                `<div>
+                     3321 — 8 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_711519204a5a369e64a8a544c7b87d1c.setIcon(icon_56aa256c9f87e716adf1db03a24d188e);
+            
+    
+            var marker_377fcaf9a383957ae1749e0a589d4d81 = L.marker(
+                [50.8349521475, 4.844366508625],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_fc65bcadfda9749f0a42a662701a5b11 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3b6de6eb4fee89a70b23348c9d4e4c92 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9f1f34b9f91163e58ce7f7cc73d30b0b = $(`<div id="html_9f1f34b9f91163e58ce7f7cc73d30b0b" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3370<br><b>Restaurants delivering:</b> 8</div>`)[0];
+                popup_3b6de6eb4fee89a70b23348c9d4e4c92.setContent(html_9f1f34b9f91163e58ce7f7cc73d30b0b);
+            
+        
+
+        marker_377fcaf9a383957ae1749e0a589d4d81.bindPopup(popup_3b6de6eb4fee89a70b23348c9d4e4c92)
+        ;
+
+        
+    
+    
+            marker_377fcaf9a383957ae1749e0a589d4d81.bindTooltip(
+                `<div>
+                     3370 — 8 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_377fcaf9a383957ae1749e0a589d4d81.setIcon(icon_fc65bcadfda9749f0a42a662701a5b11);
+            
+    
+            var marker_6acb40c7ca4043b51a0e79b95df999f5 = L.marker(
+                [50.86673696666667, 4.925625952666667],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_09522163a5b016e6b3005e1688727d92 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa2d88fc5539e18c91cf663cf6060b39 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5e073b4dc5f2c260a48326b1919046e7 = $(`<div id="html_5e073b4dc5f2c260a48326b1919046e7" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3384<br><b>Restaurants delivering:</b> 8</div>`)[0];
+                popup_fa2d88fc5539e18c91cf663cf6060b39.setContent(html_5e073b4dc5f2c260a48326b1919046e7);
+            
+        
+
+        marker_6acb40c7ca4043b51a0e79b95df999f5.bindPopup(popup_fa2d88fc5539e18c91cf663cf6060b39)
+        ;
+
+        
+    
+    
+            marker_6acb40c7ca4043b51a0e79b95df999f5.bindTooltip(
+                `<div>
+                     3384 — 8 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6acb40c7ca4043b51a0e79b95df999f5.setIcon(icon_09522163a5b016e6b3005e1688727d92);
+            
+    
+            var marker_42aa81942bbb9acaf76032604cb81a82 = L.marker(
+                [50.85478818333333, 4.993078790999999],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_7bf10614875eca5e807188c5f6c76096 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca8268a2cea60619403cf1712c7228b3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e1c05260b47a3ec2567982e58aa99079 = $(`<div id="html_e1c05260b47a3ec2567982e58aa99079" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3471<br><b>Restaurants delivering:</b> 8</div>`)[0];
+                popup_ca8268a2cea60619403cf1712c7228b3.setContent(html_e1c05260b47a3ec2567982e58aa99079);
+            
+        
+
+        marker_42aa81942bbb9acaf76032604cb81a82.bindPopup(popup_ca8268a2cea60619403cf1712c7228b3)
+        ;
+
+        
+    
+    
+            marker_42aa81942bbb9acaf76032604cb81a82.bindTooltip(
+                `<div>
+                     3471 — 8 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_42aa81942bbb9acaf76032604cb81a82.setIcon(icon_7bf10614875eca5e807188c5f6c76096);
+            
+    
+            var marker_bd28e7f5766c265c730b15b4d38c74fb = L.marker(
+                [50.937632443333335, 5.729241492333333],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_6205758c9bb32142df83ff7487947dc5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5411ea9e64388a7446c3cb74091302d9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3b9661ef29b18d1d34e930180ea81661 = $(`<div id="html_3b9661ef29b18d1d34e930180ea81661" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3631<br><b>Restaurants delivering:</b> 8</div>`)[0];
+                popup_5411ea9e64388a7446c3cb74091302d9.setContent(html_3b9661ef29b18d1d34e930180ea81661);
+            
+        
+
+        marker_bd28e7f5766c265c730b15b4d38c74fb.bindPopup(popup_5411ea9e64388a7446c3cb74091302d9)
+        ;
+
+        
+    
+    
+            marker_bd28e7f5766c265c730b15b4d38c74fb.bindTooltip(
+                `<div>
+                     3631 — 8 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bd28e7f5766c265c730b15b4d38c74fb.setIcon(icon_6205758c9bb32142df83ff7487947dc5);
+            
+    
+            var marker_2013aa901f4383c99f50f0d4920923d4 = L.marker(
+                [50.8329324, 5.333127213],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_99685dba15af63fca321581b29b1801e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab09821f7b61f0f420f15b39172aa33c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_62ad555d1c8e3a7415da3fe09d73b52b = $(`<div id="html_62ad555d1c8e3a7415da3fe09d73b52b" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3831<br><b>Restaurants delivering:</b> 8</div>`)[0];
+                popup_ab09821f7b61f0f420f15b39172aa33c.setContent(html_62ad555d1c8e3a7415da3fe09d73b52b);
+            
+        
+
+        marker_2013aa901f4383c99f50f0d4920923d4.bindPopup(popup_ab09821f7b61f0f420f15b39172aa33c)
+        ;
+
+        
+    
+    
+            marker_2013aa901f4383c99f50f0d4920923d4.bindTooltip(
+                `<div>
+                     3831 — 8 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2013aa901f4383c99f50f0d4920923d4.setIcon(icon_99685dba15af63fca321581b29b1801e);
+            
+    
+            var marker_3ca986bebe0bdaf6f00b67bf42de2490 = L.marker(
+                [51.116096565, 3.0910624915],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_714e278668e33f7ecb7dee82b14ee30b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85739bd231482a91e50e2e0c1753c127 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fd905d608e900f70b980c4dc34727838 = $(`<div id="html_fd905d608e900f70b980c4dc34727838" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8211<br><b>Restaurants delivering:</b> 8</div>`)[0];
+                popup_85739bd231482a91e50e2e0c1753c127.setContent(html_fd905d608e900f70b980c4dc34727838);
+            
+        
+
+        marker_3ca986bebe0bdaf6f00b67bf42de2490.bindPopup(popup_85739bd231482a91e50e2e0c1753c127)
+        ;
+
+        
+    
+    
+            marker_3ca986bebe0bdaf6f00b67bf42de2490.bindTooltip(
+                `<div>
+                     8211 — 8 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3ca986bebe0bdaf6f00b67bf42de2490.setIcon(icon_714e278668e33f7ecb7dee82b14ee30b);
+            
+    
+            var marker_9782b1c5ddf8c0f16c2714b1ea414c75 = L.marker(
+                [51.1297276575, 2.84510263425],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_470379273f9c38fdeb11d235be9998f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c20830838519ff2f0c55eaabd2b8432e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_82410205b6a3ebdb3ca01ce8fa5a9744 = $(`<div id="html_82410205b6a3ebdb3ca01ce8fa5a9744" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8433<br><b>Restaurants delivering:</b> 8</div>`)[0];
+                popup_c20830838519ff2f0c55eaabd2b8432e.setContent(html_82410205b6a3ebdb3ca01ce8fa5a9744);
+            
+        
+
+        marker_9782b1c5ddf8c0f16c2714b1ea414c75.bindPopup(popup_c20830838519ff2f0c55eaabd2b8432e)
+        ;
+
+        
+    
+    
+            marker_9782b1c5ddf8c0f16c2714b1ea414c75.bindTooltip(
+                `<div>
+                     8433 — 8 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9782b1c5ddf8c0f16c2714b1ea414c75.setIcon(icon_470379273f9c38fdeb11d235be9998f4);
+            
+    
+            var marker_51e585f860e3c06bdc7dde28fa995afc = L.marker(
+                [50.75132974, 3.368965775],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_88c7e5df91402134b147c5d9b496e1f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_399d62cf08eaf9264ac7252d8f9554ae = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c59d3df3d64a7f509c8630aa470b5f34 = $(`<div id="html_c59d3df3d64a7f509c8630aa470b5f34" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8554<br><b>Restaurants delivering:</b> 8</div>`)[0];
+                popup_399d62cf08eaf9264ac7252d8f9554ae.setContent(html_c59d3df3d64a7f509c8630aa470b5f34);
+            
+        
+
+        marker_51e585f860e3c06bdc7dde28fa995afc.bindPopup(popup_399d62cf08eaf9264ac7252d8f9554ae)
+        ;
+
+        
+    
+    
+            marker_51e585f860e3c06bdc7dde28fa995afc.bindTooltip(
+                `<div>
+                     8554 — 8 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_51e585f860e3c06bdc7dde28fa995afc.setIcon(icon_88c7e5df91402134b147c5d9b496e1f4);
+            
+    
+            var marker_11ee67978e99498ff0247b8e828f16c6 = L.marker(
+                [50.72381885, 3.369593322],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_d8d2379b2ec495e70e397b8d4a3d157d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6c787b044ae4d879b31d46e3d75f3d2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ba9fce00baa23aaa60289e95b0b17306 = $(`<div id="html_ba9fce00baa23aaa60289e95b0b17306" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8587<br><b>Restaurants delivering:</b> 8</div>`)[0];
+                popup_a6c787b044ae4d879b31d46e3d75f3d2.setContent(html_ba9fce00baa23aaa60289e95b0b17306);
+            
+        
+
+        marker_11ee67978e99498ff0247b8e828f16c6.bindPopup(popup_a6c787b044ae4d879b31d46e3d75f3d2)
+        ;
+
+        
+    
+    
+            marker_11ee67978e99498ff0247b8e828f16c6.bindTooltip(
+                `<div>
+                     8587 — 8 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_11ee67978e99498ff0247b8e828f16c6.setIcon(icon_d8d2379b2ec495e70e397b8d4a3d157d);
+            
+    
+            var marker_cefaf1462c54d1c110720b9f601655be = L.marker(
+                [51.0922176925, 2.5917984725],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_c6758cc0ad795cbb575ab472eb125580 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df16cad48d8a886aa94be79f65724d5e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3ebc04cb37c8594f491d6b5945f799f0 = $(`<div id="html_3ebc04cb37c8594f491d6b5945f799f0" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8660<br><b>Restaurants delivering:</b> 8</div>`)[0];
+                popup_df16cad48d8a886aa94be79f65724d5e.setContent(html_3ebc04cb37c8594f491d6b5945f799f0);
+            
+        
+
+        marker_cefaf1462c54d1c110720b9f601655be.bindPopup(popup_df16cad48d8a886aa94be79f65724d5e)
+        ;
+
+        
+    
+    
+            marker_cefaf1462c54d1c110720b9f601655be.bindTooltip(
+                `<div>
+                     8660 — 8 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cefaf1462c54d1c110720b9f601655be.setIcon(icon_c6758cc0ad795cbb575ab472eb125580);
+            
+    
+            var marker_0f9f5fd103edab57916be4beb4423ff7 = L.marker(
+                [50.904565015, 2.8420636095000003],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_d863e09e20e7addc3b2bc12a48f41869 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7032403ea651b3b0ddbf33dd6577238d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b499296102dc86e31ae8df6873ae1216 = $(`<div id="html_b499296102dc86e31ae8df6873ae1216" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8904<br><b>Restaurants delivering:</b> 8</div>`)[0];
+                popup_7032403ea651b3b0ddbf33dd6577238d.setContent(html_b499296102dc86e31ae8df6873ae1216);
+            
+        
+
+        marker_0f9f5fd103edab57916be4beb4423ff7.bindPopup(popup_7032403ea651b3b0ddbf33dd6577238d)
+        ;
+
+        
+    
+    
+            marker_0f9f5fd103edab57916be4beb4423ff7.bindTooltip(
+                `<div>
+                     8904 — 8 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0f9f5fd103edab57916be4beb4423ff7.setIcon(icon_d863e09e20e7addc3b2bc12a48f41869);
+            
+    
+            var marker_e8ea987372d24d61993a91e765885df1 = L.marker(
+                [50.88458245, 2.816342722],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_7a941d9303eca61bf3cf3421d10eed4f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_63f1eb7546c038d82a27ba59948de809 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f5d9c075764f66ad5034d8a7fdba8e17 = $(`<div id="html_f5d9c075764f66ad5034d8a7fdba8e17" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8906<br><b>Restaurants delivering:</b> 8</div>`)[0];
+                popup_63f1eb7546c038d82a27ba59948de809.setContent(html_f5d9c075764f66ad5034d8a7fdba8e17);
+            
+        
+
+        marker_e8ea987372d24d61993a91e765885df1.bindPopup(popup_63f1eb7546c038d82a27ba59948de809)
+        ;
+
+        
+    
+    
+            marker_e8ea987372d24d61993a91e765885df1.bindTooltip(
+                `<div>
+                     8906 — 8 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e8ea987372d24d61993a91e765885df1.setIcon(icon_7a941d9303eca61bf3cf3421d10eed4f);
+            
+    
+            var marker_612e0cbf7297858affb9e0b186e06e97 = L.marker(
+                [50.78643096, 2.882163498],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_86ad75ea7136ae177b2a77dad79c760f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b711fcedcb5295c3ccba751a9a005f9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a7996bcd97342f7682e862049d86252d = $(`<div id="html_a7996bcd97342f7682e862049d86252d" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8953<br><b>Restaurants delivering:</b> 8</div>`)[0];
+                popup_7b711fcedcb5295c3ccba751a9a005f9.setContent(html_a7996bcd97342f7682e862049d86252d);
+            
+        
+
+        marker_612e0cbf7297858affb9e0b186e06e97.bindPopup(popup_7b711fcedcb5295c3ccba751a9a005f9)
+        ;
+
+        
+    
+    
+            marker_612e0cbf7297858affb9e0b186e06e97.bindTooltip(
+                `<div>
+                     8953 — 8 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_612e0cbf7297858affb9e0b186e06e97.setIcon(icon_86ad75ea7136ae177b2a77dad79c760f);
+            
+    
+            var marker_a34bf6f97db9bf06027442865f574cef = L.marker(
+                [50.782426695, 3.5222790105],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_e5a795a8d662c5382d3165d5ad8f9a9c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6b8e67d4ac0cabd42900a9760ececa7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_31f8c499fa18f2c58d29523d523cc94b = $(`<div id="html_31f8c499fa18f2c58d29523d523cc94b" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9690<br><b>Restaurants delivering:</b> 8</div>`)[0];
+                popup_d6b8e67d4ac0cabd42900a9760ececa7.setContent(html_31f8c499fa18f2c58d29523d523cc94b);
+            
+        
+
+        marker_a34bf6f97db9bf06027442865f574cef.bindPopup(popup_d6b8e67d4ac0cabd42900a9760ececa7)
+        ;
+
+        
+    
+    
+            marker_a34bf6f97db9bf06027442865f574cef.bindTooltip(
+                `<div>
+                     9690 — 8 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a34bf6f97db9bf06027442865f574cef.setIcon(icon_e5a795a8d662c5382d3165d5ad8f9a9c);
+            
+    
+            var marker_5c7ca003a4fd59650eb9df0033a37555 = L.marker(
+                [51.190101586666664, 3.634761806],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_80baa9402bc5420f7707fd59b236338a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ed9a0f79d3c293c52544a65b1500f38 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_276360df300737eaba36d2034e9a7dbb = $(`<div id="html_276360df300737eaba36d2034e9a7dbb" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9971<br><b>Restaurants delivering:</b> 8</div>`)[0];
+                popup_3ed9a0f79d3c293c52544a65b1500f38.setContent(html_276360df300737eaba36d2034e9a7dbb);
+            
+        
+
+        marker_5c7ca003a4fd59650eb9df0033a37555.bindPopup(popup_3ed9a0f79d3c293c52544a65b1500f38)
+        ;
+
+        
+    
+    
+            marker_5c7ca003a4fd59650eb9df0033a37555.bindTooltip(
+                `<div>
+                     9971 — 8 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5c7ca003a4fd59650eb9df0033a37555.setIcon(icon_80baa9402bc5420f7707fd59b236338a);
+            
+    
+            var marker_17298d69a576518a273b73ae80146144 = L.marker(
+                [51.24128474, 3.526024738],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_0e22aa7b26e907194f8e35fd66f1df80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3ae2ee1d0d58256f1105e15776fc79d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9d3d28143718b15667f0895b6d953679 = $(`<div id="html_9d3d28143718b15667f0895b6d953679" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9980<br><b>Restaurants delivering:</b> 8</div>`)[0];
+                popup_d3ae2ee1d0d58256f1105e15776fc79d.setContent(html_9d3d28143718b15667f0895b6d953679);
+            
+        
+
+        marker_17298d69a576518a273b73ae80146144.bindPopup(popup_d3ae2ee1d0d58256f1105e15776fc79d)
+        ;
+
+        
+    
+    
+            marker_17298d69a576518a273b73ae80146144.bindTooltip(
+                `<div>
+                     9980 — 8 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_17298d69a576518a273b73ae80146144.setIcon(icon_0e22aa7b26e907194f8e35fd66f1df80);
+            
+    
+            var marker_8de539c6d0ed1b7d31e34b3f98ad0ef4 = L.marker(
+                [51.201948503333334, 3.427200871],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_97856dbef3941e2e93b0d92b193f5c7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a8105a38cbb5902d00f6ee059dabd37e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_99ce3f38cd19c7bde0af3cbb526a6a44 = $(`<div id="html_99ce3f38cd19c7bde0af3cbb526a6a44" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9990<br><b>Restaurants delivering:</b> 8</div>`)[0];
+                popup_a8105a38cbb5902d00f6ee059dabd37e.setContent(html_99ce3f38cd19c7bde0af3cbb526a6a44);
+            
+        
+
+        marker_8de539c6d0ed1b7d31e34b3f98ad0ef4.bindPopup(popup_a8105a38cbb5902d00f6ee059dabd37e)
+        ;
+
+        
+    
+    
+            marker_8de539c6d0ed1b7d31e34b3f98ad0ef4.bindTooltip(
+                `<div>
+                     9990 — 8 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8de539c6d0ed1b7d31e34b3f98ad0ef4.setIcon(icon_97856dbef3941e2e93b0d92b193f5c7e);
+            
+    
+            var marker_a0c1f6bb84da415692dd13dc8442cbe2 = L.marker(
+                [51.39838672, 4.793835289],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_fe95822eb54eb6ca546e8b5d11f19cea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a16db33ef8bceaf77102adb770afb962 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dd1575d507d95cab74933ae038ef00f1 = $(`<div id="html_dd1575d507d95cab74933ae038ef00f1" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 2323<br><b>Restaurants delivering:</b> 9</div>`)[0];
+                popup_a16db33ef8bceaf77102adb770afb962.setContent(html_dd1575d507d95cab74933ae038ef00f1);
+            
+        
+
+        marker_a0c1f6bb84da415692dd13dc8442cbe2.bindPopup(popup_a16db33ef8bceaf77102adb770afb962)
+        ;
+
+        
+    
+    
+            marker_a0c1f6bb84da415692dd13dc8442cbe2.bindTooltip(
+                `<div>
+                     2323 — 9 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a0c1f6bb84da415692dd13dc8442cbe2.setIcon(icon_fe95822eb54eb6ca546e8b5d11f19cea);
+            
+    
+            var marker_a88833d6ed88e0efe7f5be368585be86 = L.marker(
+                [51.331135849999995, 5.08923728],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_aa8ba1a00801c1939911ef36006d5f1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f4930c22017a8ad38b0f9a5e2846dcbe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b2c1ec96181a22fa993ee48a3b65c82d = $(`<div id="html_b2c1ec96181a22fa993ee48a3b65c82d" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 2370<br><b>Restaurants delivering:</b> 9</div>`)[0];
+                popup_f4930c22017a8ad38b0f9a5e2846dcbe.setContent(html_b2c1ec96181a22fa993ee48a3b65c82d);
+            
+        
+
+        marker_a88833d6ed88e0efe7f5be368585be86.bindPopup(popup_f4930c22017a8ad38b0f9a5e2846dcbe)
+        ;
+
+        
+    
+    
+            marker_a88833d6ed88e0efe7f5be368585be86.bindTooltip(
+                `<div>
+                     2370 — 9 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a88833d6ed88e0efe7f5be368585be86.setIcon(icon_aa8ba1a00801c1939911ef36006d5f1e);
+            
+    
+            var marker_cdd51b7d937cd5eb3212c39c2cfbeba0 = L.marker(
+                [51.405809463333334, 4.982738881],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_9f21803bb7deff50eb4290c17a3cbe24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd97eeffbb7fa89852de28149aa658b7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b5c0924bf899bd8bf50c0eb3df74cc0c = $(`<div id="html_b5c0924bf899bd8bf50c0eb3df74cc0c" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 2381<br><b>Restaurants delivering:</b> 9</div>`)[0];
+                popup_fd97eeffbb7fa89852de28149aa658b7.setContent(html_b5c0924bf899bd8bf50c0eb3df74cc0c);
+            
+        
+
+        marker_cdd51b7d937cd5eb3212c39c2cfbeba0.bindPopup(popup_fd97eeffbb7fa89852de28149aa658b7)
+        ;
+
+        
+    
+    
+            marker_cdd51b7d937cd5eb3212c39c2cfbeba0.bindTooltip(
+                `<div>
+                     2381 — 9 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cdd51b7d937cd5eb3212c39c2cfbeba0.setIcon(icon_9f21803bb7deff50eb4290c17a3cbe24);
+            
+    
+            var marker_eab129f8038f945f08dc4c1a6f415187 = L.marker(
+                [50.84088538, 5.450630355],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_0787534e257df6506ffb38b91a222e7c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fbb422ff58e71677cbebd5ca162d8f69 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e9160131334cbb9afd56748f7812b740 = $(`<div id="html_e9160131334cbb9afd56748f7812b740" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3732<br><b>Restaurants delivering:</b> 9</div>`)[0];
+                popup_fbb422ff58e71677cbebd5ca162d8f69.setContent(html_e9160131334cbb9afd56748f7812b740);
+            
+        
+
+        marker_eab129f8038f945f08dc4c1a6f415187.bindPopup(popup_fbb422ff58e71677cbebd5ca162d8f69)
+        ;
+
+        
+    
+    
+            marker_eab129f8038f945f08dc4c1a6f415187.bindTooltip(
+                `<div>
+                     3732 — 9 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eab129f8038f945f08dc4c1a6f415187.setIcon(icon_0787534e257df6506ffb38b91a222e7c);
+            
+    
+            var marker_87cb98cbe18a34df27737b27ad14ad7b = L.marker(
+                [50.78167765, 3.411708975],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_b18cc0f3e332f7bb3dc52bebdc8a24d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c520ed9b950b2cc8e5dc732bbc6c0fa = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bbd4bfb5e409f36dcf2018a48f95805b = $(`<div id="html_bbd4bfb5e409f36dcf2018a48f95805b" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8551<br><b>Restaurants delivering:</b> 9</div>`)[0];
+                popup_9c520ed9b950b2cc8e5dc732bbc6c0fa.setContent(html_bbd4bfb5e409f36dcf2018a48f95805b);
+            
+        
+
+        marker_87cb98cbe18a34df27737b27ad14ad7b.bindPopup(popup_9c520ed9b950b2cc8e5dc732bbc6c0fa)
+        ;
+
+        
+    
+    
+            marker_87cb98cbe18a34df27737b27ad14ad7b.bindTooltip(
+                `<div>
+                     8551 — 9 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_87cb98cbe18a34df27737b27ad14ad7b.setIcon(icon_b18cc0f3e332f7bb3dc52bebdc8a24d5);
+            
+    
+            var marker_94b083432ab0a8cca5664f604477858f = L.marker(
+                [50.81432404, 3.496489414],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_d7005b6c1c1284b9cb6634990a85ddc0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_23e3ceea5455e434af808c632005fab0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c09b63e35314411fe8174a920c23e5cc = $(`<div id="html_c09b63e35314411fe8174a920c23e5cc" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8572<br><b>Restaurants delivering:</b> 9</div>`)[0];
+                popup_23e3ceea5455e434af808c632005fab0.setContent(html_c09b63e35314411fe8174a920c23e5cc);
+            
+        
+
+        marker_94b083432ab0a8cca5664f604477858f.bindPopup(popup_23e3ceea5455e434af808c632005fab0)
+        ;
+
+        
+    
+    
+            marker_94b083432ab0a8cca5664f604477858f.bindTooltip(
+                `<div>
+                     8572 — 9 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_94b083432ab0a8cca5664f604477858f.setIcon(icon_d7005b6c1c1284b9cb6634990a85ddc0);
+            
+    
+            var marker_d44fbaf51d393d37c20ce928e44d171e = L.marker(
+                [50.81197463, 3.471501777],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_5312de7d5ae64e9989282aa6ec10cf85 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_976bde0394ca506c49b7d1c2b5749de4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_26c8efbc22c89b723b8d984ae994b90f = $(`<div id="html_26c8efbc22c89b723b8d984ae994b90f" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8573<br><b>Restaurants delivering:</b> 9</div>`)[0];
+                popup_976bde0394ca506c49b7d1c2b5749de4.setContent(html_26c8efbc22c89b723b8d984ae994b90f);
+            
+        
+
+        marker_d44fbaf51d393d37c20ce928e44d171e.bindPopup(popup_976bde0394ca506c49b7d1c2b5749de4)
+        ;
+
+        
+    
+    
+            marker_d44fbaf51d393d37c20ce928e44d171e.bindTooltip(
+                `<div>
+                     8573 — 9 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d44fbaf51d393d37c20ce928e44d171e.setIcon(icon_5312de7d5ae64e9989282aa6ec10cf85);
+            
+    
+            var marker_bdccf45e1500b8614ab39ff9fc8ec39e = L.marker(
+                [50.77500257, 3.447935956],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_1bad69b8d8bbfbfe6662fe1f9028d9f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_485c1505879ff5a14f7c0627ae070bc8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_547951598c3446599702b56304505f4c = $(`<div id="html_547951598c3446599702b56304505f4c" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8580<br><b>Restaurants delivering:</b> 9</div>`)[0];
+                popup_485c1505879ff5a14f7c0627ae070bc8.setContent(html_547951598c3446599702b56304505f4c);
+            
+        
+
+        marker_bdccf45e1500b8614ab39ff9fc8ec39e.bindPopup(popup_485c1505879ff5a14f7c0627ae070bc8)
+        ;
+
+        
+    
+    
+            marker_bdccf45e1500b8614ab39ff9fc8ec39e.bindTooltip(
+                `<div>
+                     8580 — 9 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bdccf45e1500b8614ab39ff9fc8ec39e.setIcon(icon_1bad69b8d8bbfbfe6662fe1f9028d9f9);
+            
+    
+            var marker_2ddfa7fdeca1c33b3d6a027fde34def3 = L.marker(
+                [51.03066411857143, 3.0092405825714286],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_7142f3734f58707b1d6ee1d380269b68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d244b0cef69ce1f186f22fd801826cf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a9179ee3c76e7c33fda2a35d26fed81b = $(`<div id="html_a9179ee3c76e7c33fda2a35d26fed81b" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8610<br><b>Restaurants delivering:</b> 9</div>`)[0];
+                popup_6d244b0cef69ce1f186f22fd801826cf.setContent(html_a9179ee3c76e7c33fda2a35d26fed81b);
+            
+        
+
+        marker_2ddfa7fdeca1c33b3d6a027fde34def3.bindPopup(popup_6d244b0cef69ce1f186f22fd801826cf)
+        ;
+
+        
+    
+    
+            marker_2ddfa7fdeca1c33b3d6a027fde34def3.bindTooltip(
+                `<div>
+                     8610 — 9 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2ddfa7fdeca1c33b3d6a027fde34def3.setIcon(icon_7142f3734f58707b1d6ee1d380269b68);
+            
+    
+            var marker_fdc829c63749979ecf205d74431698de = L.marker(
+                [51.02679121, 3.1403393015],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_82aaef8a367321d60eb89acffbb54628 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4dcf424712abefaca6cb2462871a2dc2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_191330578dd500f35edd40231e5f37e8 = $(`<div id="html_191330578dd500f35edd40231e5f37e8" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8810<br><b>Restaurants delivering:</b> 9</div>`)[0];
+                popup_4dcf424712abefaca6cb2462871a2dc2.setContent(html_191330578dd500f35edd40231e5f37e8);
+            
+        
+
+        marker_fdc829c63749979ecf205d74431698de.bindPopup(popup_4dcf424712abefaca6cb2462871a2dc2)
+        ;
+
+        
+    
+    
+            marker_fdc829c63749979ecf205d74431698de.bindTooltip(
+                `<div>
+                     8810 — 9 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fdc829c63749979ecf205d74431698de.setIcon(icon_82aaef8a367321d60eb89acffbb54628);
+            
+    
+            var marker_7b5c61d8a34a9f724151e8ee59a2254c = L.marker(
+                [51.00226557, 3.209364701],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_e4ef9189c0d57e6f69d697cc78062006 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_201ddd23bfaeed9c67142534878ff8ed = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fd70d4f62d3adf2258e3701e236bcca5 = $(`<div id="html_fd70d4f62d3adf2258e3701e236bcca5" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8851<br><b>Restaurants delivering:</b> 9</div>`)[0];
+                popup_201ddd23bfaeed9c67142534878ff8ed.setContent(html_fd70d4f62d3adf2258e3701e236bcca5);
+            
+        
+
+        marker_7b5c61d8a34a9f724151e8ee59a2254c.bindPopup(popup_201ddd23bfaeed9c67142534878ff8ed)
+        ;
+
+        
+    
+    
+            marker_7b5c61d8a34a9f724151e8ee59a2254c.bindTooltip(
+                `<div>
+                     8851 — 9 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7b5c61d8a34a9f724151e8ee59a2254c.setIcon(icon_e4ef9189c0d57e6f69d697cc78062006);
+            
+    
+            var marker_c792c8d57efe038272db219886e6c438 = L.marker(
+                [50.85711877125, 2.722083969125],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_a73d253a84f608d6893ad2cd3b5a04c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_053a1ce3567cc787da2c2818aff8439f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e0cd20d2df0a6bc49367e8792a1d88f8 = $(`<div id="html_e0cd20d2df0a6bc49367e8792a1d88f8" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8970<br><b>Restaurants delivering:</b> 9</div>`)[0];
+                popup_053a1ce3567cc787da2c2818aff8439f.setContent(html_e0cd20d2df0a6bc49367e8792a1d88f8);
+            
+        
+
+        marker_c792c8d57efe038272db219886e6c438.bindPopup(popup_053a1ce3567cc787da2c2818aff8439f)
+        ;
+
+        
+    
+    
+            marker_c792c8d57efe038272db219886e6c438.bindTooltip(
+                `<div>
+                     8970 — 9 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c792c8d57efe038272db219886e6c438.setIcon(icon_a73d253a84f608d6893ad2cd3b5a04c4);
+            
+    
+            var marker_534cc1dcf8abceb3ac9acaac29e35278 = L.marker(
+                [51.07738393666667, 3.4342612895],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_56645d0d17ff00faea73c38d3998421a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d8c86ab4bdd58231055ad216eca38a93 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e4c4f4bf56a2c15c8b2b7add42a0bbd2 = $(`<div id="html_e4c4f4bf56a2c15c8b2b7add42a0bbd2" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9880<br><b>Restaurants delivering:</b> 9</div>`)[0];
+                popup_d8c86ab4bdd58231055ad216eca38a93.setContent(html_e4c4f4bf56a2c15c8b2b7add42a0bbd2);
+            
+        
+
+        marker_534cc1dcf8abceb3ac9acaac29e35278.bindPopup(popup_d8c86ab4bdd58231055ad216eca38a93)
+        ;
+
+        
+    
+    
+            marker_534cc1dcf8abceb3ac9acaac29e35278.bindTooltip(
+                `<div>
+                     9880 — 9 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_534cc1dcf8abceb3ac9acaac29e35278.setIcon(icon_56645d0d17ff00faea73c38d3998421a);
+            
+    
+            var marker_31f83e1438070ba2efd8f5395f61f539 = L.marker(
+                [51.134819495, 3.449206517],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_9000bd0c3308c96d2ad72eba9bc3cb12 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a998f938bf5a383ef61223b07f87a83a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_86c17f316118ea10fe10e3ae13de0ec7 = $(`<div id="html_86c17f316118ea10fe10e3ae13de0ec7" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9910<br><b>Restaurants delivering:</b> 9</div>`)[0];
+                popup_a998f938bf5a383ef61223b07f87a83a.setContent(html_86c17f316118ea10fe10e3ae13de0ec7);
+            
+        
+
+        marker_31f83e1438070ba2efd8f5395f61f539.bindPopup(popup_a998f938bf5a383ef61223b07f87a83a)
+        ;
+
+        
+    
+    
+            marker_31f83e1438070ba2efd8f5395f61f539.bindTooltip(
+                `<div>
+                     9910 — 9 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_31f83e1438070ba2efd8f5395f61f539.setIcon(icon_9000bd0c3308c96d2ad72eba9bc3cb12);
+            
+    
+            var marker_ef0b72c2e70a04eb555fd9d727bae0d5 = L.marker(
+                [51.13058457, 3.552260554],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_69bf98f8e266ab9e947e2d8a474e27a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_419df0f2720975400bbe9a2d54e66c9e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5cd8faf1f4040a3f10a70c50331e6254 = $(`<div id="html_5cd8faf1f4040a3f10a70c50331e6254" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9932<br><b>Restaurants delivering:</b> 9</div>`)[0];
+                popup_419df0f2720975400bbe9a2d54e66c9e.setContent(html_5cd8faf1f4040a3f10a70c50331e6254);
+            
+        
+
+        marker_ef0b72c2e70a04eb555fd9d727bae0d5.bindPopup(popup_419df0f2720975400bbe9a2d54e66c9e)
+        ;
+
+        
+    
+    
+            marker_ef0b72c2e70a04eb555fd9d727bae0d5.bindTooltip(
+                `<div>
+                     9932 — 9 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ef0b72c2e70a04eb555fd9d727bae0d5.setIcon(icon_69bf98f8e266ab9e947e2d8a474e27a0);
+            
+    
+            var marker_e154ccf553475a6eba045b1482cb6b04 = L.marker(
+                [51.22517589666666, 3.671452654],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_8165e1ce2ed07c055e45e5a9a4bff763 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f8067cfcf0dee975189b697a2ac473a5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f1f2f8495e57ba3d9b9a071f90569639 = $(`<div id="html_f1f2f8495e57ba3d9b9a071f90569639" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9968<br><b>Restaurants delivering:</b> 9</div>`)[0];
+                popup_f8067cfcf0dee975189b697a2ac473a5.setContent(html_f1f2f8495e57ba3d9b9a071f90569639);
+            
+        
+
+        marker_e154ccf553475a6eba045b1482cb6b04.bindPopup(popup_f8067cfcf0dee975189b697a2ac473a5)
+        ;
+
+        
+    
+    
+            marker_e154ccf553475a6eba045b1482cb6b04.bindTooltip(
+                `<div>
+                     9968 — 9 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e154ccf553475a6eba045b1482cb6b04.setIcon(icon_8165e1ce2ed07c055e45e5a9a4bff763);
+            
+    
+            var marker_5b4951e7a148e545ffeb29f93474b8b6 = L.marker(
+                [51.20300312, 3.485723751],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_11cbb3750f3617cb17c8a6154c6383cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b97214cae93c7d09d32c08a17645116 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c341263b59adf66cade4d37313d6c40a = $(`<div id="html_c341263b59adf66cade4d37313d6c40a" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9991<br><b>Restaurants delivering:</b> 9</div>`)[0];
+                popup_6b97214cae93c7d09d32c08a17645116.setContent(html_c341263b59adf66cade4d37313d6c40a);
+            
+        
+
+        marker_5b4951e7a148e545ffeb29f93474b8b6.bindPopup(popup_6b97214cae93c7d09d32c08a17645116)
+        ;
+
+        
+    
+    
+            marker_5b4951e7a148e545ffeb29f93474b8b6.bindTooltip(
+                `<div>
+                     9991 — 9 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5b4951e7a148e545ffeb29f93474b8b6.setIcon(icon_11cbb3750f3617cb17c8a6154c6383cb);
+            
+    
+            var marker_42eafca6c41a95213c97581655baa086 = L.marker(
+                [50.85086356, 5.419305624],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_bc239f3ba64d0a719ed8a4eb571acf6c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c18ca020661108f6b38ea3878b497fc6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_16c57cf034fdb7c5ddd7101b7571091e = $(`<div id="html_16c57cf034fdb7c5ddd7101b7571091e" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3722<br><b>Restaurants delivering:</b> 10</div>`)[0];
+                popup_c18ca020661108f6b38ea3878b497fc6.setContent(html_16c57cf034fdb7c5ddd7101b7571091e);
+            
+        
+
+        marker_42eafca6c41a95213c97581655baa086.bindPopup(popup_c18ca020661108f6b38ea3878b497fc6)
+        ;
+
+        
+    
+    
+            marker_42eafca6c41a95213c97581655baa086.bindTooltip(
+                `<div>
+                     3722 — 10 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_42eafca6c41a95213c97581655baa086.setIcon(icon_bc239f3ba64d0a719ed8a4eb571acf6c);
+            
+    
+            var marker_6705f56f7925a1728cf88dcbbeef4561 = L.marker(
+                [50.827158835000006, 5.417857230999999],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_2a2597243a66cfb59bcd97fae5dee8c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b85a54d3d0ef7c31b3218e6b6f75d26e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_137131b81e0731310b7cb00d633f8676 = $(`<div id="html_137131b81e0731310b7cb00d633f8676" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 3724<br><b>Restaurants delivering:</b> 10</div>`)[0];
+                popup_b85a54d3d0ef7c31b3218e6b6f75d26e.setContent(html_137131b81e0731310b7cb00d633f8676);
+            
+        
+
+        marker_6705f56f7925a1728cf88dcbbeef4561.bindPopup(popup_b85a54d3d0ef7c31b3218e6b6f75d26e)
+        ;
+
+        
+    
+    
+            marker_6705f56f7925a1728cf88dcbbeef4561.bindTooltip(
+                `<div>
+                     3724 — 10 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6705f56f7925a1728cf88dcbbeef4561.setIcon(icon_2a2597243a66cfb59bcd97fae5dee8c1);
+            
+    
+            var marker_cbf9480f89d0c7b98194b94f7929fec4 = L.marker(
+                [51.25489367, 3.055741987],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_677a053b778fb48cd16bd866bd143cd5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7bde5ac07fccce7a17db06041fb1bb5f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ec59e1c56f571a4931d400b662011a41 = $(`<div id="html_ec59e1c56f571a4931d400b662011a41" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8421<br><b>Restaurants delivering:</b> 10</div>`)[0];
+                popup_7bde5ac07fccce7a17db06041fb1bb5f.setContent(html_ec59e1c56f571a4931d400b662011a41);
+            
+        
+
+        marker_cbf9480f89d0c7b98194b94f7929fec4.bindPopup(popup_7bde5ac07fccce7a17db06041fb1bb5f)
+        ;
+
+        
+    
+    
+            marker_cbf9480f89d0c7b98194b94f7929fec4.bindTooltip(
+                `<div>
+                     8421 — 10 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cbf9480f89d0c7b98194b94f7929fec4.setIcon(icon_677a053b778fb48cd16bd866bd143cd5);
+            
+    
+            var marker_e004c0c4530761049d2f59ad8f81a6b3 = L.marker(
+                [51.18147895, 2.839875425],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_89bd16b43846f3fdcfd7cd34a57c032d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_37190d02c8daa0479050d9f3b921492c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_537defe79b951112fa47c523aef8e7a9 = $(`<div id="html_537defe79b951112fa47c523aef8e7a9" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8431<br><b>Restaurants delivering:</b> 10</div>`)[0];
+                popup_37190d02c8daa0479050d9f3b921492c.setContent(html_537defe79b951112fa47c523aef8e7a9);
+            
+        
+
+        marker_e004c0c4530761049d2f59ad8f81a6b3.bindPopup(popup_37190d02c8daa0479050d9f3b921492c)
+        ;
+
+        
+    
+    
+            marker_e004c0c4530761049d2f59ad8f81a6b3.bindTooltip(
+                `<div>
+                     8431 — 10 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e004c0c4530761049d2f59ad8f81a6b3.setIcon(icon_89bd16b43846f3fdcfd7cd34a57c032d);
+            
+    
+            var marker_8fc6cd10a0c25c1529c333edb93caaf2 = L.marker(
+                [50.80811432, 3.423354402],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_27010a47cecdcb81444e211000bc8fb1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f8d1c008d9965f148369edbe04c925b0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_748cc56eaa10e11e8c413f3a3d66e1ce = $(`<div id="html_748cc56eaa10e11e8c413f3a3d66e1ce" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8553<br><b>Restaurants delivering:</b> 10</div>`)[0];
+                popup_f8d1c008d9965f148369edbe04c925b0.setContent(html_748cc56eaa10e11e8c413f3a3d66e1ce);
+            
+        
+
+        marker_8fc6cd10a0c25c1529c333edb93caaf2.bindPopup(popup_f8d1c008d9965f148369edbe04c925b0)
+        ;
+
+        
+    
+    
+            marker_8fc6cd10a0c25c1529c333edb93caaf2.bindTooltip(
+                `<div>
+                     8553 — 10 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8fc6cd10a0c25c1529c333edb93caaf2.setIcon(icon_27010a47cecdcb81444e211000bc8fb1);
+            
+    
+            var marker_d0a93780a50936b240a2ea116f2b3e0b = L.marker(
+                [51.059631849999995, 3.380746986],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_cbec20168a566356efe4b209139ad1ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eeaeb7010cfb366d3c130a4c96261fa1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f21615882851b1a1c652aa35abac88ac = $(`<div id="html_f21615882851b1a1c652aa35abac88ac" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8755<br><b>Restaurants delivering:</b> 10</div>`)[0];
+                popup_eeaeb7010cfb366d3c130a4c96261fa1.setContent(html_f21615882851b1a1c652aa35abac88ac);
+            
+        
+
+        marker_d0a93780a50936b240a2ea116f2b3e0b.bindPopup(popup_eeaeb7010cfb366d3c130a4c96261fa1)
+        ;
+
+        
+    
+    
+            marker_d0a93780a50936b240a2ea116f2b3e0b.bindTooltip(
+                `<div>
+                     8755 — 10 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d0a93780a50936b240a2ea116f2b3e0b.setIcon(icon_cbec20168a566356efe4b209139ad1ca);
+            
+    
+            var marker_7bd56ef4aa7a60372c3b55dbbaa022df = L.marker(
+                [50.949277485, 3.0166205505],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_8917e326cfa14c7d11c5189241264bcb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f343741974479b591695787c67a094d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f778bad1b981c5c0a5e42397584292d9 = $(`<div id="html_f778bad1b981c5c0a5e42397584292d9" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 8840<br><b>Restaurants delivering:</b> 10</div>`)[0];
+                popup_3f343741974479b591695787c67a094d.setContent(html_f778bad1b981c5c0a5e42397584292d9);
+            
+        
+
+        marker_7bd56ef4aa7a60372c3b55dbbaa022df.bindPopup(popup_3f343741974479b591695787c67a094d)
+        ;
+
+        
+    
+    
+            marker_7bd56ef4aa7a60372c3b55dbbaa022df.bindTooltip(
+                `<div>
+                     8840 — 10 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7bd56ef4aa7a60372c3b55dbbaa022df.setIcon(icon_8917e326cfa14c7d11c5189241264bcb);
+            
+    
+            var marker_fa4fd806d514d1996e7dba87468b8d81 = L.marker(
+                [50.803942219999996, 3.6457080544],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_0aa8f8bf1c4892901a35b7aea2743fea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_66410979c05d71273d4ee3aabe842623 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8dd791334a58d8044078e240fd7fcf4e = $(`<div id="html_8dd791334a58d8044078e240fd7fcf4e" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9680<br><b>Restaurants delivering:</b> 10</div>`)[0];
+                popup_66410979c05d71273d4ee3aabe842623.setContent(html_8dd791334a58d8044078e240fd7fcf4e);
+            
+        
+
+        marker_fa4fd806d514d1996e7dba87468b8d81.bindPopup(popup_66410979c05d71273d4ee3aabe842623)
+        ;
+
+        
+    
+    
+            marker_fa4fd806d514d1996e7dba87468b8d81.bindTooltip(
+                `<div>
+                     9680 — 10 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fa4fd806d514d1996e7dba87468b8d81.setIcon(icon_0aa8f8bf1c4892901a35b7aea2743fea);
+            
+    
+            var marker_cbba7ccd9579599ac7dc7ce7013e7b8b = L.marker(
+                [50.889830860000004, 3.563392662],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_0dac4c1a40adf1cd44ed5ade022a849c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9303fc754ee9015f1644b23939009ac5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0511ed361df170678f0c2ba9e1a28e6b = $(`<div id="html_0511ed361df170678f0c2ba9e1a28e6b" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9772<br><b>Restaurants delivering:</b> 10</div>`)[0];
+                popup_9303fc754ee9015f1644b23939009ac5.setContent(html_0511ed361df170678f0c2ba9e1a28e6b);
+            
+        
+
+        marker_cbba7ccd9579599ac7dc7ce7013e7b8b.bindPopup(popup_9303fc754ee9015f1644b23939009ac5)
+        ;
+
+        
+    
+    
+            marker_cbba7ccd9579599ac7dc7ce7013e7b8b.bindTooltip(
+                `<div>
+                     9772 — 10 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cbba7ccd9579599ac7dc7ce7013e7b8b.setIcon(icon_0dac4c1a40adf1cd44ed5ade022a849c);
+            
+    
+            var marker_9709c4900e0fe475d3252a424c7e8e80 = L.marker(
+                [51.15113052, 3.526051194],
+                {
+}
+            ).addTo(marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4);
+        
+    
+            var icon_ccd733aaeb37e3c7f89d6d65dfe9068c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_72a10ade2520ced86df60d42a4ae70f1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5fc3a14e91894bc5ba0803f729463991 = $(`<div id="html_5fc3a14e91894bc5ba0803f729463991" style="width: 100.0%; height: 100.0%;"><b>Postal code:</b> 9931<br><b>Restaurants delivering:</b> 10</div>`)[0];
+                popup_72a10ade2520ced86df60d42a4ae70f1.setContent(html_5fc3a14e91894bc5ba0803f729463991);
+            
+        
+
+        marker_9709c4900e0fe475d3252a424c7e8e80.bindPopup(popup_72a10ade2520ced86df60d42a4ae70f1)
+        ;
+
+        
+    
+    
+            marker_9709c4900e0fe475d3252a424c7e8e80.bindTooltip(
+                `<div>
+                     9931 — 10 restaurants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9709c4900e0fe475d3252a424c7e8e80.setIcon(icon_ccd733aaeb37e3c7f89d6d65dfe9068c);
+            
+    
+            marker_cluster_7004c2bbf2de1424d0e236ef0e1ed4d4.addTo(feature_group_06afbe3689fe87f096939e634110ac07);
+        
+    
+(function() {
+  var map = map_f49de384d50beeddbb2e069c9695735b;
+  var thresholds = [3, 5, 10];
+  var t2layer = {
+    3: feature_group_5ff3f65f57e0014284df374bbbb38793, 5: feature_group_85b748c9e4fbb02f41e4dd418566e5c7, 10: feature_group_06afbe3689fe87f096939e634110ac07
+  };
+
+  function setThreshold(t) {
+    thresholds.forEach(function(tt) {
+      if (map.hasLayer(t2layer[tt])) map.removeLayer(t2layer[tt]);
+    });
+    map.addLayer(t2layer[t]);
+
+    var label = document.getElementById('dead-threshold-label');
+    if (label) label.innerHTML = "Dead zones threshold: ≤" + t + " restaurants";
+  }
+
+  var control = L.control({position: 'topright'});
+  control.onAdd = function(map) {
+    var div = L.DomUtil.create('div', 'leaflet-bar');
+    div.style.background = 'white';
+    div.style.padding = '10px';
+    div.style.minWidth = '240px';
+    div.style.boxShadow = '0 1px 4px rgba(0,0,0,0.2)';
+
+    div.innerHTML = `
+      <div id="dead-threshold-label" style="font-size:14px; font-weight:600; margin-bottom:8px;">
+        Dead zones threshold: ≤5 restaurants
+      </div>
+
+      <div style="display:flex; gap:10px; align-items:center;">
+        
+          <label style="display:flex; gap:6px; align-items:center; cursor:pointer; font-size:13px;">
+            <input type="radio" name="deadthr" value="3" />
+            ≤3
+          </label>
+          
+          <label style="display:flex; gap:6px; align-items:center; cursor:pointer; font-size:13px;">
+            <input type="radio" name="deadthr" value="5" checked/>
+            ≤5
+          </label>
+          
+          <label style="display:flex; gap:6px; align-items:center; cursor:pointer; font-size:13px;">
+            <input type="radio" name="deadthr" value="10" />
+            ≤10
+          </label>
+          
+      </div>
+    `;
+
+    L.DomEvent.disableClickPropagation(div);
+    return div;
+  };
+  control.addTo(map);
+
+  // wire events
+  document.querySelectorAll("input[name='deadthr']").forEach(function(el) {
+    el.addEventListener('change', function(e) {
+      setThreshold(parseInt(e.target.value, 10));
+    });
+  });
+
+  // ensure correct layer on load
+  setThreshold(5);
+})();
+</script>
+</html>
