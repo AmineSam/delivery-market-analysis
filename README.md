@@ -1,4 +1,4 @@
-# Delivery Market Analysis
+# Delivery Market Analysis (SQL & Data Analysis)
 
 A business‑oriented exploratory analysis of a Takeaway database to uncover actionable insights for:
 - **Restaurant partners** (pricing, positioning, quality/ops opportunities)
